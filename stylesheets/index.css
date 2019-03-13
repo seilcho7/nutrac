@@ -27,9 +27,16 @@ h1 {
 nav {
     height: 10%;
     width: 100%;
-    list-style: none;
 }
 
 .meal {
     display: flex;
+}
+
+.meal > * {
+    margin: 5px;
+}
+
+input[type="radio"] {
+    border-radius: 0%;
 }
