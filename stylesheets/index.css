@@ -10,3 +10,21 @@ html, body {
     height: 100%;
     width: 100%;
 }
+
+body > * {
+    border: 1px solid black;
+}
+
+body {
+    flex-direction: column;
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    height: 10%;
+    width: 100%;
+}
