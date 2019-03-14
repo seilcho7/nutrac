@@ -18,12 +18,23 @@ function getRelevantData(meal, dietary) {
     return URL1;
 }
 
-function getIngredients(){
-    
-}
-
-function convertRecipeData (recipeEntry){
-    
-
-    return nutritionInformation
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// Returns array with list of ingredients, recipeApi search ingredients, and serving size////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+function getIngredientsList(fetchData){
+    ingredientsInfo = ''
+    listOfIngredients = ''
+    servingSize= fetchData['servings'] 
+    recipeInfo= []
+    fetchData['extendedIngredients'].forEach(function(ingredient){
+        ingredientsInfo+=` ${ingredient['amount']} ${ingredient['unit']} ${ingredient['name']},`
+    });
+    fetchData['extendedIngredients'].forEach(function(ingredient){
+      listOfIngredients+=`${ingredient['name']} ,`
+  });
+    recipeInfo.push(listOfIngredients)
+    recipeInfo.push(ingredientsInfo)
+    recipeInfo.push(servingSize)
+    console.log(recipeInfo)
+    return(recipeInfo); 
 }
