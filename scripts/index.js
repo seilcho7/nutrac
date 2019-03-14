@@ -17,3 +17,9 @@ function getRelevantData(meal, dietary) {
 
     return URL1;
 }
+
+function convertRecipeData (recipeEntry){
+    
+
+    return nutritionInformation
+}
