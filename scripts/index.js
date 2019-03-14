@@ -18,6 +18,16 @@ function getRelevantData(meal, dietary) {
     return URL1;
 }
 
+function getIngredients(){
+    
+}
+
+function convertRecipeData (recipeEntry){
+    
+
+    return nutritionInformation
+}
+
 
 // Initialized Variables for total nutrition information
 let totalCalories = 0;
@@ -83,3 +93,6 @@ fetch(fileName2)
     .then(function (data) {
         getNutrionalValue(data);
     });
+
+
+
