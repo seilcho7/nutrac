@@ -1,21 +1,17 @@
-const URL1 = ""
-let recipeInfoArray; 
-
-
-function testing() {
-    console.log("checked");
-}
+let recipeInfoArray;
+let mealFinal = "";
+let vegetarianFinal = "";
 
 function mealResult(meal) {
-    let result = meal;
-    console.log(result);
-    return result;
+    mealFinal = meal;
+    // console.log(mealFinal);
+    return mealFinal;
 }
 
-function vegeterianResult(vegeterian) {
-    let result = vegeterian;
-    console.log(result);
-    return result;
+function vegetarianResult(vegetarian) {
+    vegetarianFinal = vegetarian;
+    // console.log(vegetarianFinal);
+    return vegetarianFinal;
 }
 
 // Track which button user clicks and return the result.
@@ -32,22 +28,24 @@ function getUserInput() {
     const dessert = document.getElementById('dessert').addEventListener('click', function () {
         mealResult("dessert");
     });
-    const isVegeterian = document.getElementById('is-vegeterian').addEventListener('click', function () {
-        mealResult("vegeterian");
+    const isVegetarian = document.getElementById('is-vegetarian').addEventListener('click', function () {
+        vegetarianResult("%2Cvegetarian");
     });
-    const isNotVegeterian = document.getElementById('not-vegeterian').addEventListener('click', function () {
-        mealResult("not vegeterian");
+    const isNotVegeterian = document.getElementById('not-vegetarian').addEventListener('click', function () {
+        vegetarianResult("");
     });
 }
 
 getUserInput();
 
-// Change URL1 depending on type of meal and dietary chosen.
-function getRelevantData(meal, dietary) {
-    let URL1 = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=1&tags=${meal}${dietary}`;
 
+// Change URL1 depending on type of meal and dietary chosen.
+function getRelevantData(meal, vegetarian) {
+    let URL1 = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=1&tags=${meal}${vegetarian}`;
     return URL1;
 }
+
+getRelevantData(mealFinal, vegetarianFinal);
 
 // Adds function that fetches data from api
 function retrieveData(recipeURL) {
@@ -56,16 +54,15 @@ function retrieveData(recipeURL) {
             return response.json();
         })
         .then(function(actualData){
-
             recipeInfoArray = getIngredientsList(actualData);
-        }) 
-    } 
+        });
+} 
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////// Returns array with list of ingredients, recipeApi search ingredients, and serving size////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-function getIngredientsList(fetchData){
+function getIngredientsList(fetchData) {
     ingredientsInfo = ''
     listOfIngredients = ''
     servingSize= fetchData['servings'] 
@@ -166,7 +163,7 @@ function fetchNutrition(string){
 // fetchNutrition(testIngred);
 
 /// Main function in order of execution
-function main() {
-    getRelevantData(); 
-    retrieveData();
-}
+// function main() {
+//     getRelevantData(); 
+//     retrieveData();
+// }
