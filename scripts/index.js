@@ -11,9 +11,49 @@ function retrieveData() {
         })
 }
 
+function testing() {
+    console.log("checked");
+}
+
+function mealResult(meal) {
+    let result = meal;
+    console.log(result);
+    return result;
+}
+
+function vegeterianResult(vegeterian) {
+    let result = vegeterian;
+    console.log(result);
+    return result;
+}
+
+// Track which button user clicks and return the result.
+function getUserInput() {
+    const breakfast = document.getElementById('breakfast').addEventListener('click', function () {
+        mealResult("breakfast");
+    });
+    const lunch = document.getElementById('lunch').addEventListener('click', function () {
+        mealResult("lunch");
+    });
+    const dinner = document.getElementById('dinner').addEventListener('click', function () {
+        mealResult("dinner");
+    });
+    const dessert = document.getElementById('dessert').addEventListener('click', function () {
+        mealResult("dessert");
+    });
+    const isVegeterian = document.getElementById('is-vegeterian').addEventListener('click', function () {
+        mealResult("vegeterian");
+    });
+    const isNotVegeterian = document.getElementById('not-vegeterian').addEventListener('click', function () {
+        mealResult("not vegeterian");
+    });
+}
+
+getUserInput();
+
 // Change URL1 depending on type of meal and dietary chosen.
 function getRelevantData(meal, dietary) {
-    let URL1 = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=1&tags=${meal}%2C+${dietary}`;
+    let URL1 = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=1&tags=${meal}${dietary}`;
 
     return URL1;
 }
