@@ -1,15 +1,6 @@
 const URL1 = ""
+let recipeInfoArray; 
 
-// Adds function that fetch data from api
-function retrieveData() {
-    fetch(URL1)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (actualData) {
-            console.log(actualData);
-        })
-}
 
 function testing() {
     console.log("checked");
@@ -57,6 +48,18 @@ function getRelevantData(meal, dietary) {
 
     return URL1;
 }
+
+// Adds function that fetches data from api
+function retrieveData(recipeURL) {
+    fetch(recipeURL)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function(actualData){
+
+            recipeInfoArray = getIngredientsList(actualData);
+        }) 
+    } 
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -161,3 +164,9 @@ function fetchNutrition(string){
 //         getNutrionalValue(data);
 //     });
 // fetchNutrition(testIngred);
+
+/// Main function in order of execution
+function main() {
+    getRelevantData(); 
+    retrieveData();
+}
