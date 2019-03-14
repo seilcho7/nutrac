@@ -37,6 +37,15 @@ body {
     flex-direction: row;
 }
 
+.dietary {
+    display: flex;
+    flex-direction: row;
+}
+
 .meal > * {
+    margin: 5px;
+}
+
+.dietary > * {
     margin: 5px;
 }
