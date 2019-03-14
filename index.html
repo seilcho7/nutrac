@@ -4,35 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Temp Font -->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <!-- Normalizer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Index StyleSheet -->
     <link rel="stylesheet" href="stylesheets/index.css">
+    <!-- Paul Irish Box Model StyleSheet-->
     <link rel="stylesheet" href="stylesheets/paul_irish_box_model.css">
     <title>Nu.Trac</title>
 </head>
 <body>
+    <!-- Title with Nu.Trac Logo -->
     <div class="title">
         <img src="images/title.png">
     </div>
+
+    <!-- Nav Div for Meal and Dietary Selection-->
     <nav class="nav">
+        <!-- Meal Option -->
         <div class="meal">
             <span>Meal:</span>
-            <input name="meal-button" type="radio" id="breakfast">
-            <span>Breakfast</span>
-            <input name="meal-button" type="radio" id="lunch">
-            <span>Lunch</span>
-            <input name="meal-button" type="radio" id="dinner">
-            <span>Dinner</span>
-            <input name="meal-button" type="radio" id="dessert">
-            <span>Dessert</span>
+            <div class="breakfast">
+                <input name="meal-button" type="radio" id="breakfast">
+                <span>Breakfast</span>
+            </div>
+            <div class="lunch">
+                <input name="meal-button" type="radio" id="lunch">
+                <span>Lunch</span>
+            </div>
+            <div class="dinner">
+                <input name="meal-button" type="radio" id="dinner">
+                <span>Dinner</span>
+            </div>
+            <div class="dessert">
+                <input name="meal-button" type="radio" id="dessert">
+                <span>Dessert</span>
+            </div>
         </div>
-        <div class="vegetarian">
-            <span>Vegetarian:</span>
-            <input name="vegetarian-button" type="radio" id="is-vegetarian">
-            <span>Yes</span>
-            <input name="vegetarian-button" type="radio" id="not-vegetarian">
-            <span>No</span>
+        <!-- Dietary Option-->
+        <div class="vegeterian">
+            <span>Vegeterian:</span>
+            <div class="yes-vegetarian">
+                <input name="vegeterian-button" type="radio" id="is-vegeterian">
+                <span>Yes</span>
+            </div>
+            <div class="no-vegetarian">
+                <input name="vegeterian-button" type="radio" id="not-vegeterian">
+                <span>No</span>
+            </div>
         </div>
     </nav>
+
+    <!-- Recipe Div Block -->
+    <div class="recipeContainer">
+        <!-- Recipe Title-->
+        <div class="recipe-title">
+            <h3>
+                RECIPE
+            </h3>
+        </div>
+
+        <!-- Information Div-->
+        <div class="information-container">
+
+        </div>
+    </div>
+
     <script src="scripts/index.js"></script>
 </body>
 </html>

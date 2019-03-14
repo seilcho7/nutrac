@@ -1,14 +1,11 @@
-html {
-    box-sizing: 100%;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
 html, body {
     height: 100%;
     width: 100%;
+}
+
+html {
+    /* Temp Font */
+    font-family: 'Shadows Into Light', cursive;
 }
 
 body > * {
@@ -37,7 +34,7 @@ body {
     flex-direction: row;
 }
 
-.dietary {
+.vegeterian {
     display: flex;
     flex-direction: row;
 }
@@ -46,6 +43,37 @@ body {
     margin: 5px;
 }
 
-.dietary > * {
+.vegeterian > * {
     margin: 5px;
+}
+
+/* RECIPE */
+
+.recipe-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* Bigger than 370px, it can be row */
+@media screen and (max-width: 370px) {
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .meal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vegeterian {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
 }
