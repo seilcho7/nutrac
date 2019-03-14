@@ -1,0 +1,457 @@
+{
+  "recipes": [
+    {
+      "vegetarian": true,
+      "vegan": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "veryHealthy": false,
+      "cheap": false,
+      "veryPopular": true,
+      "sustainable": false,
+      "weightWatcherSmartPoints": 3,
+      "gaps": "no",
+      "lowFodmap": false,
+      "ketogenic": false,
+      "whole30": false,
+      "preparationMinutes": 10,
+      "cookingMinutes": 17,
+      "sourceUrl": "http://minimalistbaker.com/gluten-free-vegan-breakfast-cookies/",
+      "spoonacularSourceUrl": "https://spoonacular.com/gluten-free-vegan-breakfast-cookies-500769",
+      "aggregateLikes": 12302,
+      "spoonacularScore": 53.0,
+      "healthScore": 4.0,
+      "creditText": "Minimalist Baker",
+      "sourceName": "Minimalist Baker",
+      "pricePerServing": 54.89,
+      "extendedIngredients": [
+        {
+          "id": 19912,
+          "aisle": "Ethnic Foods;Health Foods",
+          "image": "agave.png",
+          "consitency": "liquid",
+          "name": "agave nectar",
+          "original": "3 Tbsp agave nectar (or sub maple syrup, or honey if not vegan)",
+          "originalString": "3 Tbsp agave nectar (or sub maple syrup, or honey if not vegan)",
+          "originalName": "agave nectar (or sub maple syrup, or honey if not vegan)",
+          "amount": 3.0,
+          "unit": "Tbsp",
+          "meta": ["(or sub maple syrup, or honey if not vegan)"],
+          "metaInformation": ["(or sub maple syrup, or honey if not vegan)"],
+          "measures": {
+            "us": { "amount": 3.0, "unitShort": "Tbsps", "unitLong": "Tbsps" },
+            "metric": {
+              "amount": 3.0,
+              "unitShort": "Tbsps",
+              "unitLong": "Tbsps"
+            }
+          }
+        },
+        {
+          "id": 93740,
+          "aisle": "Gluten Free;Health Foods;Baking",
+          "image": "almond-meal-or-almond-flour.jpg",
+          "consitency": "solid",
+          "name": "almond meal",
+          "original": "1/2 cup almond meal (ground from raw almonds)",
+          "originalString": "1/2 cup almond meal (ground from raw almonds)",
+          "originalName": "almond meal (ground from raw almonds)",
+          "amount": 0.5,
+          "unit": "cup",
+          "meta": ["raw", "(ground from almonds)"],
+          "metaInformation": ["raw", "(ground from almonds)"],
+          "measures": {
+            "us": { "amount": 0.5, "unitShort": "cups", "unitLong": "cups" },
+            "metric": {
+              "amount": 118.294,
+              "unitShort": "g",
+              "unitLong": "grams"
+            }
+          }
+        },
+        {
+          "id": 18371,
+          "aisle": "Baking",
+          "image": "white-powder.jpg",
+          "consitency": "solid",
+          "name": "baking powder",
+          "original": "1/2 tsp baking powder",
+          "originalString": "1/2 tsp baking powder",
+          "originalName": "baking powder",
+          "amount": 0.5,
+          "unit": "tsp",
+          "meta": [],
+          "metaInformation": [],
+          "measures": {
+            "us": {
+              "amount": 0.5,
+              "unitShort": "tsps",
+              "unitLong": "teaspoons"
+            },
+            "metric": {
+              "amount": 0.5,
+              "unitShort": "tsps",
+              "unitLong": "teaspoons"
+            }
+          }
+        },
+        {
+          "id": 18372,
+          "aisle": "Baking",
+          "image": "white-powder.jpg",
+          "consitency": "solid",
+          "name": "baking soda",
+          "original": "1/2 tsp baking soda",
+          "originalString": "1/2 tsp baking soda",
+          "originalName": "baking soda",
+          "amount": 0.5,
+          "unit": "tsp",
+          "meta": [],
+          "metaInformation": [],
+          "measures": {
+            "us": {
+              "amount": 0.5,
+              "unitShort": "tsps",
+              "unitLong": "teaspoons"
+            },
+            "metric": {
+              "amount": 0.5,
+              "unitShort": "tsps",
+              "unitLong": "teaspoons"
+            }
+          }
+        },
+        {
+          "id": 9040,
+          "aisle": "Produce",
+          "image": "bananas.jpg",
+          "consitency": "solid",
+          "name": "bananas",
+          "original": "2 medium ripe bananas",
+          "originalString": "2 medium ripe bananas",
+          "originalName": "ripe bananas",
+          "amount": 2.0,
+          "unit": "medium",
+          "meta": ["ripe"],
+          "metaInformation": ["ripe"],
+          "measures": {
+            "us": {
+              "amount": 2.0,
+              "unitShort": "medium",
+              "unitLong": "mediums"
+            },
+            "metric": {
+              "amount": 2.0,
+              "unitShort": "medium",
+              "unitLong": "mediums"
+            }
+          }
+        },
+        {
+          "id": 4047,
+          "aisle": "Health Foods;Baking",
+          "image": "oil-coconut.jpg",
+          "consitency": "liquid",
+          "name": "coconut oil",
+          "original": "2 Tbsp refined coconut oil, melted (or canola oil)",
+          "originalString": "2 Tbsp refined coconut oil, melted (or canola oil)",
+          "originalName": "refined coconut oil, melted (or canola oil)",
+          "amount": 2.0,
+          "unit": "Tbsp",
+          "meta": ["melted", "(or canola oil)"],
+          "metaInformation": ["melted", "(or canola oil)"],
+          "measures": {
+            "us": { "amount": 2.0, "unitShort": "Tbsps", "unitLong": "Tbsps" },
+            "metric": {
+              "amount": 2.0,
+              "unitShort": "Tbsps",
+              "unitLong": "Tbsps"
+            }
+          }
+        },
+        {
+          "id": 10019071,
+          "aisle": "Baking",
+          "image": "chocolate-chips.jpg",
+          "consitency": "solid",
+          "name": "dark chocolate chips",
+          "original": "1/2 cup semisweet or dark chocolate chips (non-dairy for vegan)",
+          "originalString": "1/2 cup semisweet or dark chocolate chips (non-dairy for vegan)",
+          "originalName": "semisweet or dark chocolate chips (non-dairy for vegan)",
+          "amount": 0.5,
+          "unit": "cup",
+          "meta": ["dark", "for vegan)"],
+          "metaInformation": ["dark", "for vegan)"],
+          "measures": {
+            "us": { "amount": 0.5, "unitShort": "cups", "unitLong": "cups" },
+            "metric": {
+              "amount": 118.294,
+              "unitShort": "g",
+              "unitLong": "grams"
+            }
+          }
+        },
+        {
+          "id": 10112220,
+          "aisle": "Health Foods;Baking",
+          "image": "no.jpg",
+          "consitency": "solid",
+          "name": "flax eggs",
+          "original": "2 flax eggs (2 Tbsp flaxseed + 5 Tbsp water)",
+          "originalString": "2 flax eggs (2 Tbsp flaxseed + 5 Tbsp water)",
+          "originalName": "flax eggs (2 Tbsp flaxseed + 5 Tbsp water)",
+          "amount": 2.0,
+          "unit": "",
+          "meta": [],
+          "metaInformation": [],
+          "measures": {
+            "us": { "amount": 2.0, "unitShort": "", "unitLong": "" },
+            "metric": { "amount": 2.0, "unitShort": "", "unitLong": "" }
+          }
+        },
+        {
+          "id": 2035,
+          "aisle": "Spices and Seasonings",
+          "image": "spices.png",
+          "consitency": "solid",
+          "name": "natural spices",
+          "original": "1/2 cup natural, salted peanut butter (crunchy or smooth)",
+          "originalString": "1/2 cup natural, salted peanut butter (crunchy or smooth)",
+          "originalName": "natural, salted peanut butter (crunchy or smooth)",
+          "amount": 0.5,
+          "unit": "cup",
+          "meta": ["salted", "(crunchy or smooth)"],
+          "metaInformation": ["salted", "(crunchy or smooth)"],
+          "measures": {
+            "us": { "amount": 0.5, "unitShort": "cups", "unitLong": "cups" },
+            "metric": {
+              "amount": 118.294,
+              "unitShort": "g",
+              "unitLong": "grams"
+            }
+          }
+        },
+        {
+          "id": 20132,
+          "aisle": "Gluten Free;Health Foods",
+          "image": "brown-flour.jpg",
+          "consitency": "solid",
+          "name": "oat flour",
+          "original": "1/2 cup oat flour (ground from GF oats)",
+          "originalString": "1/2 cup oat flour (ground from GF oats)",
+          "originalName": "oat flour (ground from GF oats)",
+          "amount": 0.5,
+          "unit": "cup",
+          "meta": ["(ground from GF oats)"],
+          "metaInformation": ["(ground from GF oats)"],
+          "measures": {
+            "us": { "amount": 0.5, "unitShort": "cups", "unitLong": "cups" },
+            "metric": {
+              "amount": 118.294,
+              "unitShort": "g",
+              "unitLong": "grams"
+            }
+          }
+        },
+        {
+          "id": 8120,
+          "aisle": "Cereal",
+          "image": "rolled-oats.jpg",
+          "consitency": "solid",
+          "name": "rolled oats",
+          "original": "1 1/2 cup gluten free rolled oats",
+          "originalString": "1 1/2 cup gluten free rolled oats",
+          "originalName": "gluten free rolled oats",
+          "amount": 1.5,
+          "unit": "cup",
+          "meta": ["gluten free"],
+          "metaInformation": ["gluten free"],
+          "measures": {
+            "us": { "amount": 1.5, "unitShort": "cups", "unitLong": "cups" },
+            "metric": {
+              "amount": 354.882,
+              "unitShort": "g",
+              "unitLong": "grams"
+            }
+          }
+        },
+        {
+          "id": 1012047,
+          "aisle": "Spices and Seasonings",
+          "image": "salt.jpg",
+          "consitency": "solid",
+          "name": "sea salt",
+          "original": "pinch sea salt (add more or less depending on saltiness of your PB)",
+          "originalString": "pinch sea salt (add more or less depending on saltiness of your PB)",
+          "originalName": "pinch sea salt (add more or less depending on saltiness of your PB)",
+          "amount": 1.0,
+          "unit": "pinch",
+          "meta": ["(add more or less depending on saltiness of your PB)"],
+          "metaInformation": [
+            "(add more or less depending on saltiness of your PB)"
+          ],
+          "measures": {
+            "us": { "amount": 1.0, "unitShort": "pinch", "unitLong": "pinch" },
+            "metric": {
+              "amount": 1.0,
+              "unitShort": "pinch",
+              "unitLong": "pinch"
+            }
+          }
+        },
+        {
+          "id": 2050,
+          "aisle": "Baking",
+          "image": "vanilla.jpg",
+          "consitency": "solid",
+          "name": "vanilla extract",
+          "original": "1 tsp pure vanilla extract",
+          "originalString": "1 tsp pure vanilla extract",
+          "originalName": "pure vanilla extract",
+          "amount": 1.0,
+          "unit": "tsp",
+          "meta": ["pure"],
+          "metaInformation": ["pure"],
+          "measures": {
+            "us": { "amount": 1.0, "unitShort": "tsp", "unitLong": "teaspoon" },
+            "metric": {
+              "amount": 1.0,
+              "unitShort": "tsp",
+              "unitLong": "teaspoon"
+            }
+          }
+        },
+        {
+          "id": 12155,
+          "aisle": "Nuts;Savory Snacks;Baking",
+          "image": "walnuts.jpg",
+          "consitency": "solid",
+          "name": "walnuts",
+          "original": "3 Tbsp raw walnuts, lightly crushed (or sub other nut)",
+          "originalString": "3 Tbsp raw walnuts, lightly crushed (or sub other nut)",
+          "originalName": "raw walnuts, lightly crushed (or sub other nut)",
+          "amount": 3.0,
+          "unit": "Tbsp",
+          "meta": ["raw", "crushed", "(or sub other nut)"],
+          "metaInformation": ["raw", "crushed", "(or sub other nut)"],
+          "measures": {
+            "us": { "amount": 3.0, "unitShort": "Tbsps", "unitLong": "Tbsps" },
+            "metric": {
+              "amount": 3.0,
+              "unitShort": "Tbsps",
+              "unitLong": "Tbsps"
+            }
+          }
+        }
+      ],
+      "id": 500769,
+      "title": "Gluten Free Vegan Breakfast Cookies",
+      "readyInMinutes": 27,
+      "servings": 26,
+      "image": "https://spoonacular.com/recipeImages/500769-556x370.jpg",
+      "imageType": "jpg",
+      "cuisines": [],
+      "dishTypes": ["morning meal", "brunch", "breakfast"],
+      "diets": ["gluten free", "dairy free", "lacto ovo vegetarian", "vegan"],
+      "occasions": [],
+      "winePairing": {},
+      "instructions": "Preheat oven to 350 degrees.In a large bowl combine flax seed and water and let rest for 5 minutes to achieve \"eggy\" texture.Mash in the bananas until well combined, and then add peanut butter, baking powder, baking soda, melted coconut oil, agave nectar, salt, vanilla and stir.Add oats, almond meal and oat flour and mix well.Add chocolate chips and walnuts and stir until well combined. Refrigerate for 5 minutes to harden.Drop cookies by spoonfuls on a lightly greased baking sheet - they won't expand much. Also make them as uniform in size as possible to ensure even baking.Bake for 15-17 minutes or until the cookies are slightly golden brown.Let rest on baking sheet for a few minutes before transferring to a cooling rack. After completely cooled, store in an air-tight container to keep fresh for up to a few days. Refrigerate or freezer for even longer storage time.",
+      "analyzedInstructions": [
+        {
+          "name": "",
+          "steps": [
+            {
+              "number": 1,
+              "step": "Preheat oven to 350 degrees.In a large bowl combine flax seed and water and let rest for 5 minutes to achieve \"eggy\" texture.Mash in the bananas until well combined, and then add peanut butter, baking powder, baking soda, melted coconut oil, agave nectar, salt, vanilla and stir.",
+              "ingredients": [
+                {
+                  "id": 18371,
+                  "name": "baking powder",
+                  "image": "white-powder.jpg"
+                },
+                { "id": 19912, "name": "agave", "image": "agave.png" },
+                {
+                  "id": 18372,
+                  "name": "baking soda",
+                  "image": "white-powder.jpg"
+                },
+                {
+                  "id": 4047,
+                  "name": "coconut oil",
+                  "image": "oil-coconut.jpg"
+                },
+                {
+                  "id": 10012220,
+                  "name": "flaxseed",
+                  "image": "flax-seeds.png"
+                },
+                { "id": 9040, "name": "banana", "image": "bananas.jpg" },
+                { "id": 2050, "name": "vanilla", "image": "vanilla.jpg" },
+                { "id": 2047, "name": "salt", "image": "salt.jpg" }
+              ],
+              "equipment": [
+                { "id": 404783, "name": "bowl", "image": "bowl.jpg" },
+                { "id": 404784, "name": "oven", "image": "oven.jpg" }
+              ],
+              "length": { "number": 5, "unit": "minutes" }
+            },
+            {
+              "number": 2,
+              "step": "Add oats, almond meal and oat flour and mix well.",
+              "ingredients": [
+                {
+                  "id": 93740,
+                  "name": "almond meal",
+                  "image": "almond-meal-or-almond-flour.jpg"
+                },
+                {
+                  "id": 20132,
+                  "name": "oat flour",
+                  "image": "brown-flour.jpg"
+                },
+                { "id": 8120, "name": "oats", "image": "rolled-oats.jpg" }
+              ],
+              "equipment": []
+            },
+            {
+              "number": 3,
+              "step": "Add chocolate chips and walnuts and stir until well combined. Refrigerate for 5 minutes to harden.Drop cookies by spoonfuls on a lightly greased baking sheet - they won't expand much. Also make them as uniform in size as possible to ensure even baking.",
+              "ingredients": [
+                { "id": 12155, "name": "walnuts", "image": "walnuts.jpg" }
+              ],
+              "equipment": [
+                {
+                  "id": 404727,
+                  "name": "baking sheet",
+                  "image": "baking-sheet.jpg"
+                }
+              ],
+              "length": { "number": 5, "unit": "minutes" }
+            },
+            {
+              "number": 4,
+              "step": "Bake for 15-17 minutes or until the cookies are slightly golden brown.",
+              "ingredients": [],
+              "equipment": [],
+              "length": { "number": 17, "unit": "minutes" }
+            },
+            {
+              "number": 5,
+              "step": "Let rest on baking sheet for a few minutes before transferring to a cooling rack. After completely cooled, store in an air-tight container to keep fresh for up to a few days. Refrigerate or freezer for even longer storage time.",
+              "ingredients": [],
+              "equipment": [
+                {
+                  "id": 404727,
+                  "name": "baking sheet",
+                  "image": "baking-sheet.jpg"
+                },
+                { "id": 405900, "name": "wire rack", "image": "wire-rack.jpg" }
+              ]
+            }
+          ]
+        }
+      ],
+      "creditsText": "Minimalist Baker"
+    }
+  ]
+}
