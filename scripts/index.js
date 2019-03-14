@@ -62,11 +62,15 @@ function retrieveData(recipeURL) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////// Returns array with list of ingredients, recipeApi search ingredients, and serving size////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-function getIngredientsList(fetchData) {
-    ingredientsInfo = ''
-    listOfIngredients = ''
-    servingSize= fetchData['servings'] 
-    recipeInfo= []
+function getIngredientsList(fetchData){
+    let ingredientsInfo = ''
+    let listOfIngredients = ''
+    const servingSize= fetchData['servings'] 
+    const recipeInstructions = fetchData['instructions']
+    const recipeName = fetchData['title'] 
+    
+    let recipeInfo= []
+    
     fetchData['extendedIngredients'].forEach(function(ingredient){
         ingredientsInfo+=` ${ingredient['amount']} ${ingredient['unit']} ${ingredient['name']},`
     });
@@ -76,9 +80,22 @@ function getIngredientsList(fetchData) {
     recipeInfo.push(listOfIngredients)
     recipeInfo.push(ingredientsInfo)
     recipeInfo.push(servingSize)
+    recipeInfo.push(recipeInstructions)
+    recipeInfo.push(recipeName)
     console.log(recipeInfo)
     return(recipeInfo); 
 }
+//// returns an array of the ingredients to be presented to the USER///// 
+
+function getIngredientsInArray(fetchData) {
+    let ingredientsArray = []
+    fetchData["extendedIngredients"].forEach(function(ingredient) {
+      ingredientsInfo.push(
+        `${ingredient["amount"]} ${ingredient["unit"]} ${
+        ingredient["name"]}`);
+    });
+    return ingredientsArray;
+  }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////// Nutrition INFORMATION //////////////////////////////////
