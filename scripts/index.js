@@ -1,4 +1,5 @@
-let recipeInfoArray;
+const URL1 = "";
+let recipeInfoArray = [];
 let mealFinal = "";
 let vegetarianFinal = "";
 
@@ -48,13 +49,18 @@ function getRelevantData(meal, vegetarian) {
 getRelevantData(mealFinal, vegetarianFinal);
 
 // Adds function that fetches data from api
-function retrieveData(recipeURL) {
-    fetch(recipeURL)
+function retrieveData() {
+    fetch('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=1&tags=vegetarian%2Cdessert', {
+        headers: {
+          "X-Rapidapi-Key": "545361c132msh5ff49c601f2b8bdp196a27jsn49e509407619"
+        }
+        })
         .then(function (response) {
             return response.json();
         })
         .then(function(actualData){
-            recipeInfoArray = getIngredientsList(actualData);
+            recipeInfoArray = Object.values(actualData)[0][0];
+            return recipeInfoArray;
         });
 } 
 
