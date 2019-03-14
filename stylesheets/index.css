@@ -20,23 +20,23 @@ body {
     display: flex;
 }
 
-h1 {
-    text-align: center;
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* height: 30%; */
 }
 
-nav {
-    height: 10%;
+.nav {
+    height: 20%;
     width: 100%;
 }
 
 .meal {
     display: flex;
+    flex-direction: row;
 }
 
 .meal > * {
     margin: 5px;
-}
-
-input[type="radio"] {
-    border-radius: 0%;
 }
