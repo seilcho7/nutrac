@@ -10,3 +10,10 @@ function retrieveData() {
             console.log(actualData);
         })
 }
+
+// Change URL1 depending on type of meal and dietary chosen.
+function getRelevantData(meal, dietary) {
+    let URL1 = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=1&tags=${meal}%2C+${dietary}`;
+
+    return URL1;
+}
