@@ -297,5 +297,26 @@ const recipe = {
     ],
     "creditsText": "Pocket Change Gourmet"
   }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// Returns array with list of ingredients, recipeApi search ingredients, and serving size////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+  function getIngredientsList(fetch){
+      ingredientsInfo = ''
+      listOfIngredients = ''
+      servingSize= fetch['servings'] 
+      recipeInfo= []
+      fetch['extendedIngredients'].forEach(function(ingredient){
+          ingredientsInfo+=` ${ingredient['amount']} ${ingredient['unit']} ${ingredient['name']},`
+      });
+      fetch['extendedIngredients'].forEach(function(ingredient){
+        listOfIngredients+=`${ingredient['name']} ,`
+    });
+      recipeInfo.push(listOfIngredients)
+      recipeInfo.push(ingredientsInfo)
+      recipeInfo.push(servingSize)
+      console.log(recipeInfo)
+      return(recipeInfo); 
+  }
 
-  console.log(recipe['extendedIngredients'][0]['name'])
+
+  getIngredientsList(recipe);
