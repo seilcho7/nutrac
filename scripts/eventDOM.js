@@ -42,7 +42,7 @@ const submitButton = document.querySelector("[data-submitButton]");
 function submitButtonRetrieve() {
     retrieveData(getRelevantData(mealFinal, vegetarianFinal));
     console.log(`Test. ${mealFinal} Test. ${vegetarianFinal}`)
-    // setRecipeImage();
+    // setRecipeImage(); MOVED TO SECOND THEN STATEMENT IN RETRIEVE DATA ------ DELETE THIS LINE
 }
 
 // submitButton Event Listener
@@ -50,7 +50,7 @@ submitButton.addEventListener("click", submitButtonRetrieve);
 
 
 ////////////////////////////////////////////////////////////////
-//////////////////////// RECIPE IMAGE ////////////////////////
+///////////////////////////  RECIPE  ///////////////////////////
 ////////////////////////////////////////////////////////////////
 
 // recipeImage = recipe image DOM
@@ -61,9 +61,30 @@ function setRecipeImage(){
     recipeImage.src = cleanRecipeInfo[5]; // NOTE CHANGE 0 TO ELEMENT WITH IMAGE SOURCE
 }
 
+// recipeDOMS
+function displayRecipeInformation(){
+    const recipeName = document.querySelector("[data-rName]");
+    const recipeIngredients = document.querySelector("[data-rIngredients]");
+    const recipeInstructions = document.querySelector("[data-rInstructions]");
+    
+    const nameElement = document.createElement('p');
+    nameElement.textContent = cleanRecipeInfo[4];
+    recipeName.appendChild(nameElement);
+    
+    cleanRecipeInfo[0].forEach(function (ingredient){
+        const ingredientElement = document.createElement('p');
+        ingredientElement.textContent = ingredient;
+        recipeIngredients.appendChild(ingredientElement);
+    });
+    
+    const instructionElement = document.createElement('p');
+    instructionElement.textContent = cleanRecipeInfo[3];
+    recipeInstructions.appendChild(instructionElement);
+}
+
 
 //////////////////////////////////////////////////////////////////////////////////
-//////////////////////////Nutrition button function /////////////////////////////
+////////////////////////// Nutrition button function ////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
 /// Nutrition button should retrieve nutritional info from array and pass it on to
@@ -82,5 +103,5 @@ NutButton.addEventListener('click', passNutInfo);
 
 
 function drawNutritionLabel(){
-    NutInfo.textContent = `Calories: ${totalCalories} Trans Fats: ${totalTFat} Saturated Fat: ${totalSFat} Cholesterol: ${totalCholesterol} Sodium: ${totalSodium} Carbohydrates: ${totalCarbohydrates} Fiber: ${totalDFiber} Sugar: ${totalSugar} Protein: ${totalProtein} Potassium: ${totalPotassium}`;
+    NutInfo.textContent = `Calories: \n Trans Fats:\n Saturated Fat:\n Cholesterol:\n Sodium:\n Carbohydrates:\n Fiber:\n Sugar:\n Protein:\n Potassium:`;
 }
