@@ -55,6 +55,7 @@ function fetchNutrition(string){
         .then(function (data) {
             console.log(data);
             getNutrionalValue(data);
+            drawNutritionLabel();
         });
 }
 

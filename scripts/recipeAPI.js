@@ -7,9 +7,6 @@ function getRelevantData(meal, vegetarian) {
     return API_URL;
 }
 
-
-//////// TESTING FETCH with file /////////
-let fileRecipe = "/singleRecipe.json";
 // Adds function that fetches data from api
 function retrieveData(recipeURL) {
     fetch(recipeURL, {
@@ -24,11 +21,11 @@ function retrieveData(recipeURL) {
     .then(function(actualData){
         recipeInfoArray = Object.values(actualData)[0][0];
         cleanRecipeInfo = getIngredientsList(recipeInfoArray);
+        setRecipeImage();
         return recipeInfoArray;
         
     });
 } 
-
 
 // Converts JSON data to Array
 function getIngredientsList(fetchData){
@@ -66,7 +63,7 @@ function getIngredientsInArray(fetchData) {
         ingredient["name"]}`);
     });
     return ingredientsArray;
-  }
+}
 
 // let fileRecipe = "/singleRecipe.json";
 // fetch(fileRecipe)
