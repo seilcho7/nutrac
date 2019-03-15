@@ -1,38 +1,31 @@
 let mealFinal = "";
 let vegetarianFinal = "";
 
-function mealResult(meal) {
-    mealFinal = meal;
-    console.log(mealFinal);
-    return mealFinal;
-}
-
-function vegetarianResult(vegetarian) {
-    vegetarianFinal = vegetarian;
-    console.log(vegetarianFinal);
-    return vegetarianFinal;
-}
-
-
 // Track which button user clicks and return the result.
 function getUserInput() {
-    const breakfast = document.getElementById('breakfast').addEventListener('click', function () {
-        mealResult("breakfast");
+    document.getElementById('breakfast').addEventListener('click', function () {
+        mealFinal = "breakfast";
+        console.log(mealFinal);
     });
-    const lunch = document.getElementById('lunch').addEventListener('click', function () {
-        mealResult("lunch");
+    document.getElementById('lunch').addEventListener('click', function () {
+        mealFinal = "lunch";
+        console.log(mealFinal);
     });
-    const dinner = document.getElementById('dinner').addEventListener('click', function () {
-        mealResult("dinner");
+    document.getElementById('dinner').addEventListener('click', function () {
+        mealFinal = "dinner";
+        console.log(mealFinal);
     });
-    const dessert = document.getElementById('dessert').addEventListener('click', function () {
-        mealResult("dessert");
+    document.getElementById('dessert').addEventListener('click', function () {
+        mealFinal = "dessert";
+        console.log(mealFinal);
     });
-    const isVegetarian = document.getElementById('is-vegetarian').addEventListener('click', function () {
-        vegetarianResult("%2Cvegetarian");
+    document.getElementById('is-vegetarian').addEventListener('click', function () {
+        vegetarianFinal = "%2Cvegetarian";
+        console.log(vegetarianFinal);
     });
-    const isNotVegeterian = document.getElementById('not-vegetarian').addEventListener('click', function () {
-        vegetarianResult("");
+    document.getElementById('not-vegetarian').addEventListener('click', function () {
+        vegetarianFinal = "";
+        console.log(vegetarianFinal);
     });
 }
 
