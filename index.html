@@ -69,14 +69,19 @@
             <h3>
                 RECIPE
             </h3>
-            <div> 
-                <button class="nut" nut-button>Nutrition</button>
-            </div>
         </div>
         <div class="recipe-image">
             <img src="" alt="" data-recipeIMG>
         </div>
-    </div>
+        <div class="recipe-name" data-rName>
+
+        </div>
+        <div class="recipe-ingredients" data-rIngredients>
+
+        </div>
+        <div class="recipe-instructions" data-rInstructions>
+
+        </div>
 
     <!-- Nutrition Div Block -->
     <div class ="nutrition-container">
@@ -93,9 +98,19 @@
             <div id="protein">Protein</div>
             <div id="potassium">Potassium</div>
         </div>
+        
+        <div class="generate-nutrition"> 
+            <button class="nut" nut-button>Nutrition</button>
+        </div>
+    </div>
 
 
-
+    <!-- Nutrition Div Block-->
+    <div class ="nutrition-container">
+        <h4 class="nutHeader">Nutrition Info</h4>
+        <div class="nutInfo" nut-info>
+            Placeholder
+        </div>
 
     </div>
     <script src="scripts/eventDOM.js"></script>

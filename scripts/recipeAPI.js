@@ -22,6 +22,7 @@ function retrieveData(recipeURL) {
         recipeInfoArray = Object.values(actualData)[0][0];
         cleanRecipeInfo = getIngredientsList(recipeInfoArray);
         setRecipeImage();
+        displayRecipeInformation();
         return recipeInfoArray;
         
     });
@@ -29,8 +30,8 @@ function retrieveData(recipeURL) {
 
 // Converts JSON data to Array
 function getIngredientsList(fetchData){
-    let ingredientsInfo = ''
-    let listOfIngredients = ''
+    let listOfIngredients = [];
+    let ingredientsInfo = '';
     const servingSize= fetchData['servings'] 
     const recipeInstructions = fetchData['instructions']
     const recipeName = fetchData['title'] 
@@ -39,18 +40,18 @@ function getIngredientsList(fetchData){
     let recipeInfo= []
     
     fetchData['extendedIngredients'].forEach(function(ingredient){
-        ingredientsInfo+=` ${ingredient['amount']} ${ingredient['unit']} ${ingredient['name']},`
+        listOfIngredients.push(`${ingredient['amount']} ${ingredient['unit']} ${ingredient['name']}`);
     });
     fetchData['extendedIngredients'].forEach(function(ingredient){
-        listOfIngredients+=`${ingredient['name']} ,`
+        ingredientsInfo+=` ${(ingredient[('amount')]).toFixed(2)} ${ingredient['unit']} ${ingredient['name']},`
     });
-    recipeInfo.push(listOfIngredients)
-    recipeInfo.push(ingredientsInfo)
-    recipeInfo.push(servingSize)
-    recipeInfo.push(recipeInstructions)
-    recipeInfo.push(recipeName)
-    recipeInfo.push(imageUrl)
-    console.log(recipeInfo)
+    recipeInfo.push(listOfIngredients) // 0
+    recipeInfo.push(ingredientsInfo) // 1
+    recipeInfo.push(servingSize) // 2
+    recipeInfo.push(recipeInstructions) // 3
+    recipeInfo.push(recipeName) // 4 
+    recipeInfo.push(imageUrl) // 5
+    console.log(recipeInfo) // 6
     return(recipeInfo); 
 }
 
