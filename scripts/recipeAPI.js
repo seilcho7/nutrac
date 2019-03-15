@@ -12,7 +12,8 @@ function retrieveData(recipeURL) {
     fetch(recipeURL, {
         headers: {
             // SEIL API "X-Rapidapi-Key": "545361c132msh5ff49c601f2b8bdp196a27jsn49e509407619"
-            "X-Rapidapi-Key": "f4c07c8954msh28a4e5cf34521fcp114488jsn4e18f0aabd53"
+            // ASHISH API "X-Rapidapi-Key": "f4c07c8954msh28a4e5cf34521fcp114488jsn4e18f0aabd53"
+            "X-Rapidapi-Key": "545361c132msh5ff49c601f2b8bdp196a27jsn49e509407619"
         }
     })
     .then(function (response) {

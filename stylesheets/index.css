@@ -34,6 +34,10 @@ body {
     height: 50%;
 }
 
+.nav.hide {
+    display: none;
+}
+
 .options {
     display: flex;
     flex-direction: row;
@@ -85,7 +89,11 @@ body {
 /* RECIPE */
 
 .recipeContainer {
-    /* display: none; */
+    display: none;
+}
+
+.recipeContainer.show {
+    display: block;
 }
 
 .recipe-title {
@@ -100,8 +108,13 @@ body {
 }
 
 .nutrition-container {
-    height: 20%;
+    display: none;
 }
+
+.nutrition-container.show {
+    display: block;
+}
+
 .nutHeader {
     text-align: center;
 }
