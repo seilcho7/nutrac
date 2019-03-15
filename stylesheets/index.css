@@ -36,7 +36,7 @@ body {
 }
 
 .nav.hide {
-    /* display: none; */
+    display: none;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s ease-in-out 1s, opacity 1s ease-in-out;
@@ -105,10 +105,27 @@ body {
     text-align: center;
 }
 
+.nut-not-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .nut {
     width: 90px;
     height: 35px;
-    margin-top: 20px;
+}
+
+.nut:active {
+    transform: scale(0.9);
+}
+
+.not {
+    width: 90px;
+    height: 35px;
+}
+
+.not:active {
+    transform: scale(0.9);
 }
 
 .nutrition-container {
@@ -171,6 +188,14 @@ body {
         height: 35px;
         margin-top: 50px;
     }
+    .nut {
+        width: 90px;
+        height: 35px;
+    }
+    .not {
+        width: 90px;
+        height: 35px;
+    }
     .recipe-title {
         font-size: 20px;
         text-align: center;
@@ -213,6 +238,14 @@ body {
     }
 
     .nut:active {
+        transform: scale(1.4);
+    }
+
+    .not {
+        transform: scale(1.5);
+    }
+
+    .not:active {
         transform: scale(1.4);
     }
 
