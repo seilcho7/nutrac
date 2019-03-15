@@ -16,15 +16,17 @@ body {
     flex-direction: column;
     display: flex;
 }
-
+/* Nu.Trac */
 .title {
     width: 100%;
     display: flex;
     justify-content: center;
     position: fixed;
+    z-index: 1;
+    background-color: white;
     /* height: 30%; */
 }
-
+/* Contain both meal and vegeterian */
 .nav {
     margin-top: 150px;
     display: flex;
@@ -43,9 +45,17 @@ body {
     flex-direction: column;
 }
 
+.meal > span {
+    font-size: 26px;
+}
+
 .vegeterian {
     display: flex;
     flex-direction: column;
+}
+
+.vegeterian > span {
+    font-size: 26px;
 }
 
 .meal > * {
@@ -79,13 +89,16 @@ body {
 }
 
 .recipe-title {
-    font-size: 30px;
+    font-size: 26px;
     text-align: center;
 }
+
 .nut {
-    font-size: 10px;
-    height: 1%;
+    width: 90px;
+    height: 35px;
+    margin-top: 20px;
 }
+
 .nutrition-container {
     height: 20%;
 }
@@ -114,15 +127,27 @@ body {
         flex-direction: column;
     }
 
+    .meal > span {
+        font-size: 20px;
+    }
+
     .vegeterian {
         display: flex;
         flex-direction: column;
+    }
+
+    .vegeterian > span {
+        font-size: 20px;
     }
 
     .submit-button img {
         width: 90px;
         height: 35px;
         margin-top: 50px;
+    }
+    .recipe-title {
+        font-size: 20px;
+        text-align: center;
     }
 }
 
@@ -154,6 +179,14 @@ body {
     }
 
     .submit-button img:active {
+        transform: scale(1.4);
+    }
+
+    .nut {
+        transform: scale(1.5);
+    }
+
+    .nut:active {
         transform: scale(1.4);
     }
 
