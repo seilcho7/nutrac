@@ -92,7 +92,7 @@ body {
 .nutHeader {
     text-align: center;
 }
-.nutInfo
+
 /* Bigger than 370px, it can be row */
 @media screen and (max-width: 370px) and (orientation: portrait) {
 
