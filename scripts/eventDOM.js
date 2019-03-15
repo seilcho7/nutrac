@@ -82,5 +82,5 @@ NutButton.addEventListener('click', passNutInfo);
 
 
 function drawNutritionLabel(){
-    NutInfo.textContent = `Calories: ${totalCalories} Trans Fats: ${totalTFat} Saturated Fat: ${totalSFat} Cholesterol: ${totalCholesterol} Sodium: ${totalSodium} Carbohydrates: ${totalCarbohydrates} Fiber: ${totalDFiber} Sugar: ${totalSugar} Protein: ${totalProtein} Potassium: ${totalPotassium}`;
+    NutInfo.textContent = `Calories: \n Trans Fats:\n Saturated Fat:\n Cholesterol:\n Sodium:\n Carbohydrates:\n Fiber:\n Sugar:\n Protein:\n Potassium:`;
 }
