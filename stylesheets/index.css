@@ -106,12 +106,12 @@ body {
     text-align: center;
 }
 .detailed-nut-info {
-    display:flex;
-    justify-content: row
+    display: flex;
+    justify-content: space-between;
 }
 .nutAmount {
-    display:flex;
-    justify-items: row;
+    display: flex;
+    flex-direction: column;
 
 }
 
