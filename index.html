@@ -25,7 +25,7 @@
         <!-- Meal Option -->
         <div class="options">
             <div class="meal">
-                <span>Meal:</span>
+                <span class="meal-title">Meal:</span>
                 <div class="breakfast">
                     <input name="meal-button" type="radio" id="breakfast">
                     <span>Breakfast</span>
@@ -66,18 +66,27 @@
     <div class="recipeContainer">
         <!-- Recipe Title-->
         <div class="recipe-title">
-            <h3>
+            <span>
                 RECIPE
-            </h3>
-            <div> 
-                <button class="nut" nut-button>Nutrition</button>
-            </div>
+            </span>            
         </div>
         <div class="recipe-image">
             <img src="" alt="" data-recipeIMG>
         </div>
-    </div>
+        <div class="recipe-name" data-rName>
 
+        </div>
+        <div class="recipe-ingredients" data-rIngredients>
+
+        </div>
+        <div class="recipe-instructions" data-rInstructions>
+
+        </div>
+        <div> 
+            <img src="images/button_nutrition.png" class="nut" nut-button>
+        </div>
+  </div>
+  
     <!-- Nutrition Div Block -->
     <div class ="nutrition-container">
 
@@ -97,14 +106,12 @@
         </div>
         <div class="nutAmount" nut-amount>
 
-            
-
         </div>
-
-
+      </div>
+      
     </div>
 
-    </div>
+
     <script src="scripts/eventDOM.js"></script>
     <script src="scripts/recipeAPI.js"></script>
     <script src="scripts/nutritionAPI.js"></script>
