@@ -34,6 +34,7 @@ function getIngredientsList(fetchData){
     const servingSize= fetchData['servings'] 
     const recipeInstructions = fetchData['instructions']
     const recipeName = fetchData['title'] 
+    const imageUrl = fetchData['image']
     
     let recipeInfo= []
     
@@ -48,6 +49,7 @@ function getIngredientsList(fetchData){
     recipeInfo.push(servingSize)
     recipeInfo.push(recipeInstructions)
     recipeInfo.push(recipeName)
+    recipeInfo.push(imageUrl)
     console.log(recipeInfo)
     return(recipeInfo); 
 }
