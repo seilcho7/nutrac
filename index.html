@@ -23,36 +23,42 @@
     <!-- Nav Div for Meal and Dietary Selection-->
     <nav class="nav">
         <!-- Meal Option -->
-        <div class="meal">
-            <span>Meal:</span>
-            <div class="breakfast">
-                <input name="meal-button" type="radio" id="breakfast">
-                <span>Breakfast</span>
+        <div class="options">
+            <div class="meal">
+                <span>Meal:</span>
+                <div class="breakfast">
+                    <input name="meal-button" type="radio" id="breakfast">
+                    <span>Breakfast</span>
+                </div>
+                <div class="lunch">
+                    <input name="meal-button" type="radio" id="lunch">
+                    <span>Lunch</span>
+                </div>
+                <div class="dinner">
+                    <input name="meal-button" type="radio" id="dinner">
+                    <span>Dinner</span>
+                </div>
+                <div class="dessert">
+                    <input name="meal-button" type="radio" id="dessert">
+                    <span>Dessert</span>
+                </div>
             </div>
-            <div class="lunch">
-                <input name="meal-button" type="radio" id="lunch">
-                <span>Lunch</span>
+            <!-- Dietary Option-->
+            <div class="vegeterian">
+                <span>Vegeterian:</span>
+                <div class="yes-vegetarian">
+                    <input name="vegeterian-button" type="radio" id="is-vegetarian">
+                    <span>Yes</span>
+                </div>
+                <div class="no-vegetarian">
+                    <input name="vegeterian-button" type="radio" id="not-vegetarian">
+                    <span>No</span>
+                </div>
             </div>
-            <div class="dinner">
-                <input name="meal-button" type="radio" id="dinner">
-                <span>Dinner</span>
-            </div>
-            <div class="dessert">
-                <input name="meal-button" type="radio" id="dessert">
-                <span>Dessert</span>
-            </div>
-        </div>
-        <!-- Dietary Option-->
-        <div class="vegeterian">
-            <span>Vegeterian:</span>
-            <div class="yes-vegetarian">
-                <input name="vegeterian-button" type="radio" id="is-vegetarian">
-                <span>Yes</span>
-            </div>
-            <div class="no-vegetarian">
-                <input name="vegeterian-button" type="radio" id="not-vegetarian">
-                <span>No</span>
-            </div>
+        </div>    
+            <!-- Submit Button Div Block -->
+        <div class="submit-button">
+            <img src="images/button_submit.png">
         </div>
     </nav>
 
@@ -68,6 +74,10 @@
                 <button class="nut" nut-button>Nutrition</button>
             </div>
         </div>
+        <div class="recipe-image">
+            <img src="" alt="" data-recipeIMG>
+        </div>
+
 
         <!-- Information Div-->
         <div class="information-container">
