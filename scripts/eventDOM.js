@@ -71,7 +71,7 @@ function displayRecipeInformation(){
     const recipeIngredients = document.querySelector("[data-rIngredients]");
     const recipeInstructions = document.querySelector("[data-rInstructions]");
 
-    const nameElement = document.createElement('p');
+    const nameElement = document.createElement('h2');
     nameElement.textContent = cleanRecipeInfo[4];
     recipeName.appendChild(nameElement);
     

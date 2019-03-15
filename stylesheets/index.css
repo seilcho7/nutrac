@@ -15,6 +15,8 @@ body > * {
 body {
     flex-direction: column;
     display: flex;
+    background: palegreen;
+    align-items: center;
 }
 /* Nu.Trac */
 .title {
@@ -100,6 +102,10 @@ body {
     display: block;
     text-align: center;
     margin-top: 107px;
+    border-radius: 2%;
+    background-color: white;
+    width: 80%;
+    margin-top: 130px;
 }
 
 .recipe-title {
@@ -110,12 +116,18 @@ body {
 
 .direct-rImage {
     width: 80%;
+    border-radius: 5%;
 }
 
 .recipe-name, 
 .recipe-instruction {
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.recipe-instruction p {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .nut-not-container {
@@ -147,14 +159,23 @@ body {
 
 .nutrition-container.show {
     display: block;
+    width: 80%;
+    background-color: white;
+    border-radius: 30%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .nutHeader {
     text-align: center;
+    font-size: 26px;
 }
 .detailed-nut-info {
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+    font-size: 17px;
 }
 .nutAmount {
     display: flex;
