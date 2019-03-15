@@ -75,7 +75,7 @@ body {
 /* RECIPE */
 
 .recipeContainer {
-    display: none;
+    /* display: none; */
 }
 
 .recipe-title {
