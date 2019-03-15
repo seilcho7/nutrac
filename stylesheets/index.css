@@ -53,8 +53,17 @@ body {
     font-size: 30px;
     text-align: center;
 }
-
-
+.nut {
+    font-size: 10px;
+    height: 1%;
+}
+.nutrition-container {
+    height: 20%;
+}
+.nutHeader {
+    text-align: center;
+}
+.nutInfo
 /* Bigger than 370px, it can be row */
 @media screen and (max-width: 370px) {
 
