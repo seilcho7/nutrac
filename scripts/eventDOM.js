@@ -37,17 +37,21 @@ getUserInput();
 
 // Submit Button DOM
 const submitButton = document.querySelector("[data-submitButton]");
-
+const nav = document.querySelector('[data-nav]');
+const recipeContainer = document.querySelector('[data-recipeContainer]');
 // After User selects meal and diet, when clicking submit, it takes in the values and calls Recipe API
 function submitButtonRetrieve() {
     retrieveData(getRelevantData(mealFinal, vegetarianFinal));
     console.log(`Test. ${mealFinal} Test. ${vegetarianFinal}`)
     // setRecipeImage(); MOVED TO SECOND THEN STATEMENT IN RETRIEVE DATA ------ DELETE THIS LINE
+    nav.classList.toggle('hide');
+    recipeContainer.classList.toggle('show');
 }
 
 // submitButton Event Listener
 submitButton.addEventListener("click", submitButtonRetrieve);
 
+// Adds toggle class to hid nav
 
 ////////////////////////////////////////////////////////////////
 ///////////////////////////  RECIPE  ///////////////////////////
@@ -66,7 +70,7 @@ function displayRecipeInformation(){
     const recipeName = document.querySelector("[data-rName]");
     const recipeIngredients = document.querySelector("[data-rIngredients]");
     const recipeInstructions = document.querySelector("[data-rInstructions]");
-    
+
     const nameElement = document.createElement('p');
     nameElement.textContent = cleanRecipeInfo[4];
     recipeName.appendChild(nameElement);
@@ -91,6 +95,7 @@ function displayRecipeInformation(){
 /// fetch nutrition. Nutrition button on click Should run this function. 
 function passNutInfo() {
     fetchNutrition(cleanRecipeInfo[1]);
+    nutritionContainer.classList.toggle('show');
     // NutInfo.textContent = `Calories: ${totalCalories} Trans Fats: ${totalTFat} Saturated Fat: ${totalSFat} Cholesterol: ${totalCholesterol} Sodium: ${totalSodium} Carbohydrates: ${totalCarbohydrates} Fiber: ${totalDFiber} Sugar: ${totalSugar} Protein: ${totalProtein} Potassium: ${totalPotassium}`;
 }
 
@@ -100,6 +105,7 @@ function passNutInfo() {
 const NutInfo = document.querySelector('[nut-info]');
 const NutButton = document.querySelector('[nut-button]');
 NutButton.addEventListener('click', passNutInfo);
+const nutritionContainer = document.querySelector('[data-nutritionContainer]');
 
 // Adds nutritional info paragraph divs 
 function drawNutritionLabel(){
