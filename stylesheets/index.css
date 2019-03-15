@@ -94,11 +94,24 @@ body {
 
 .recipeContainer.show {
     display: block;
+    text-align: center;
+    margin-top: 107px;
 }
 
 .recipe-title {
     font-size: 26px;
     text-align: center;
+    padding: 10px;
+}
+
+.recipe-image {
+    width: 80%;
+}
+
+.recipe-name, 
+.recipe-instruction {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .nut {
