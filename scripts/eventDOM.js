@@ -38,3 +38,4 @@ function submitButtonRetrieve() {
 
 // Submit Button DOM
 const submitButton = document.querySelector("[data-submitButton]");
+submitButton.addEventListener("click", submitButtonRetrieve);
