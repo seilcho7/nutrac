@@ -33,8 +33,9 @@ getUserInput();
 
 // After User selects meal and diet, when clicking submit, it takes in the values and calls Recipe API
 function submitButtonRetrieve() {
-    retrieveData(getRelevantData(mealFinal, vegetarianFinal));
-    setRecipeImage();
+    // retrieveData(getRelevantData(mealFinal, vegetarianFinal));
+    console.log(`Test. ${mealFinal} Test. ${vegetarianFinal}`)
+    // setRecipeImage();
 }
 
 // Submit Button DOM
