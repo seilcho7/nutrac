@@ -92,6 +92,15 @@ body {
 .nutHeader {
     text-align: center;
 }
+.detailed-nut-info {
+    display:flex;
+    justify-content: row
+}
+.nutAmount {
+    display:flex;
+    justify-items: row;
+
+}
 
 /* Bigger than 370px, it can be row */
 @media screen and (max-width: 370px) and (orientation: portrait) {
