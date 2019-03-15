@@ -98,10 +98,28 @@ function passNutInfo() {
 ///Nut button, fetch nutrition function will run and make api call and will add variables
 
 const NutInfo = document.querySelector('[nut-info]');
-const NutButton = document.querySelector('[nut-button');
+const NutButton = document.querySelector('[nut-button]');
 NutButton.addEventListener('click', passNutInfo);
 
-
+// Adds nutritional info paragraph divs 
 function drawNutritionLabel(){
-    NutInfo.textContent = `Calories: \n Trans Fats:\n Saturated Fat:\n Cholesterol:\n Sodium:\n Carbohydrates:\n Fiber:\n Sugar:\n Protein:\n Potassium:`;
+  const NutAmount=  document.querySelector('[nut-amount]');
+  let nutritionLabelArray = [ totalCalories.toFixed(2), 
+    totalTFat.toFixed(2), 
+    totalSFat.toFixed(2),
+    totalCholesterol.toFixed(2),
+    totalSodium.toFixed(2),
+    totalCarbohydrates.toFixed(2),
+    totalDFiber.toFixed(2),
+    totalSugar.toFixed(2),
+    totalProtein.toFixed(2),
+    totalPotassium.toFixed(2)
+];
+// for each item in nutritional info array create child paragraph
+  nutritionLabelArray.forEach(function(nutrient){
+      const anchorElement = document.createElement('p')
+      anchorElement.textContent = nutrient;
+      NutAmount.appendChild(anchorElement);
+
+  });
 }
