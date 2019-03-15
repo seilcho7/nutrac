@@ -10,6 +10,17 @@ let totalSugar = 0;
 let totalProtein = 0;
 let totalPotassium = 0;
 
+let nutritionLabelArray = [ totalCalories, 
+    totalTFat, 
+    totalSFat,
+    totalCholesterol,
+    totalSodium,
+    totalCarbohydrates,
+    totalDFiber,
+    totalSugar,
+    totalProtein,
+    totalPotassium
+]
 // Goes through array of each food item and accumlates data on nutritional values
 function getNutrionalValue(data) {
     console.log(data.foods[0].food_name);
