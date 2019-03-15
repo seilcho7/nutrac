@@ -32,10 +32,14 @@ body {
     display: flex;
     flex-direction: column;
     height: 50%;
+    visibility: visible;
 }
 
 .nav.hide {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s ease-in-out 1s, opacity 1s ease-in-out;
 }
 
 .options {
