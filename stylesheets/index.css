@@ -21,22 +21,31 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    position: fixed;
     /* height: 30%; */
 }
 
 .nav {
-    height: 20%;
-    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .meal {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .vegeterian {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .meal > * {
@@ -45,6 +54,22 @@ body {
 
 .vegeterian > * {
     margin: 5px;
+}
+
+/* SUBMIT BUTTON */
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button img {
+    width: 40%;
+    height: 50%;
+    margin-top: 50px;
+}
+
+.submit-button img:active {
+    transform: scale(0.9);
 }
 
 /* RECIPE */
@@ -59,6 +84,13 @@ body {
 @media screen and (max-width: 370px) {
 
     .nav {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+    }
+
+    .options {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -74,6 +106,9 @@ body {
         flex-direction: column;
     }
 
-
-
+    .submit-button img {
+        width: 40%;
+        height: 50%;
+        margin-top: 50px;
+    }
 }

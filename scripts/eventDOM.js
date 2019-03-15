@@ -32,10 +32,14 @@ function getUserInput() {
 getUserInput();
 
 // After User selects meal and diet, when clicking submit, it takes in the values and calls Recipe API
-function submitButton() {
+function submitButtonRetrieve() {
     retrieveData(getRelevantData(mealFinal, vegetarianFinal));
     setRecipeImage();
 }
+
+// Submit Button DOM
+const submitButton = document.querySelector("[data-submitButton]");
+submitButton.addEventListener("click", submitButtonRetrieve);
 
 //////////////////////// RECIPE IMAGE ////////////////////////
 // recipeImage = recipe image DOM
