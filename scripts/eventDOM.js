@@ -31,6 +31,10 @@ function getUserInput() {
 
 getUserInput();
 
+//////////////////////// SUBMIT BUTTON ////////////////////////
+// Submit Button DOM
+const submitButton = document.querySelector("[data-submitButton]");
+
 // After User selects meal and diet, when clicking submit, it takes in the values and calls Recipe API
 function submitButtonRetrieve() {
     // retrieveData(getRelevantData(mealFinal, vegetarianFinal));
@@ -38,8 +42,7 @@ function submitButtonRetrieve() {
     // setRecipeImage();
 }
 
-// Submit Button DOM
-const submitButton = document.querySelector("[data-submitButton]");
+// submitButton Event Listener
 submitButton.addEventListener("click", submitButtonRetrieve);
 
 //////////////////////// RECIPE IMAGE ////////////////////////
@@ -48,5 +51,5 @@ const recipeImage = document.querySelector("[data-recipeIMG]");
 
 // setRecipeImage function sets the src of the recipeImage DOM to the image of the recipe
 function setRecipeImage(){
-    recipeImage.src = cleanRecipeInfo[0]; // NOTE CHANGE 0 TO ELEMENT WITH IMAGE SOURCE
+    recipeImage.src = cleanRecipeInfo[5];
 }
