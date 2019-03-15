@@ -117,7 +117,7 @@ function drawNutritionLabel(){
 ];
 // for each item in nutritional info array create child paragraph
   nutritionLabelArray.forEach(function(nutrient){
-      const anchorElement = document.createElement('p')
+      const anchorElement = document.createElement('div')
       anchorElement.textContent = nutrient;
       NutAmount.appendChild(anchorElement);
 
