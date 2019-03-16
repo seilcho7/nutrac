@@ -4,8 +4,8 @@ html, body {
 }
 
 html {
-    /* Temp Font */
-    font-family: 'Shadows Into Light', cursive;
+    /* Rubik Font */
+    font-family: 'Rubik', sans-serif;
 }
 
 body > * {
@@ -15,7 +15,7 @@ body > * {
 body {
     flex-direction: column;
     display: flex;
-    background: palegreen;
+    background: #292929;
     align-items: center;
 }
 /* Nu.Trac */
@@ -25,17 +25,24 @@ body {
     justify-content: center;
     position: fixed;
     z-index: 1;
-    background-color: white;
-    /* height: 30%; */
+    background-color: #212121;
+}
+
+.divider {
+    width: 100%;
+    height: 40%;
+    background-color: #292929;
 }
 /* Contain both meal and vegeterian */
 .nav {
-    margin-top: 150px;
+    /* margin-top: 50%; */
     display: flex;
     flex-direction: column;
     height: 50%;
+    width: 100%;
     visibility: visible;
-    background-color: white;
+    background-color: #292929;
+    color: #A6A6A6;
 }
 
 .nav.hide {
@@ -56,8 +63,16 @@ body {
     flex-direction: column;
 }
 
-.meal > span {
-    font-size: 26px;
+.meal > p {
+    font-size: 18px;
+}
+
+input {
+    cursor: pointer;
+}
+
+.options > * span {
+    color:  #DBDBDB;
 }
 
 .vegeterian {
@@ -65,8 +80,8 @@ body {
     flex-direction: column;
 }
 
-.vegeterian > span {
-    font-size: 26px;
+.vegeterian > p {
+    font-size: 18px;
 }
 
 .meal > * {
@@ -83,10 +98,21 @@ body {
     justify-content: center;
 }
 
-.submit-button img {
+.submit-button button {
     width: 90px;
     height: 35px;
-    margin-top: 50px;
+    margin-top: 8%;
+    color: white;
+    background-color:#0DDB73;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+.submit-button button:hover {
+    opacity: 0.6;
+    color: #212121;
 }
 
 .submit-button img:active {
@@ -103,10 +129,11 @@ body {
     display: block;
     text-align: center;
     margin-top: 107px;
-    border-radius: 2%;
-    background-color: white;
+    /* border-radius: 2%;S */
+    background-color: #292929;
     width: 80%;
     margin-top: 130px;
+    color: #DBDBDB;
 }
 
 .recipe-title {
@@ -117,7 +144,7 @@ body {
 
 .direct-rImage {
     width: 80%;
-    border-radius: 5%;
+    /* border-radius: 5%; */
 }
 
 .recipe-name, 
@@ -139,6 +166,16 @@ body {
 .nut {
     width: 90px;
     height: 35px;
+    color: white;
+    background-color:#0DDB73;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.nut:hover {
+    opacity: 0.6;
+    color: #212121;
 }
 
 .nut:active {
@@ -148,6 +185,16 @@ body {
 .not {
     width: 90px;
     height: 35px;
+    color: white;
+    background-color:#0DDB73;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.not:hover {
+    opacity: 0.6;
+    color: #212121;
 }
 
 .not:active {
@@ -161,11 +208,12 @@ body {
 .nutrition-container.show {
     display: block;
     width: 80%;
-    background-color: white;
-    border-radius: 30%;
+    background-color: #292929;
+    /* border-radius: 30%; */
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #DBDBDB;
 }
 
 .nutHeader {
@@ -185,7 +233,7 @@ body {
 }
 
 /* Applies to all phones on portait mode */
-@media screen and (max-width: 450px) and (orientation: portrait) {
+/* @media screen and (max-width: 450px) and (orientation: portrait) {
     .nav {
         margin-top: 40%;
         margin-bottom: 10%;
@@ -238,10 +286,10 @@ body {
         font-size: 20px;
         text-align: center;
     }
-}
+} */
 
 /* Applies to all phones on landscape mode */
-@media screen and (max-width: 740px) and (orientation: landscape) {
+/* @media screen and (max-width: 740px) and (orientation: landscape) {
     .nav {
         margin-top: 20%;
         margin-bottom: 0;
@@ -255,7 +303,7 @@ body {
     .submit-button img {
         margin-bottom: 12%;
     }
-}
+} */
 
 /* @media screen and (max-width: 750px) and (orientation: landscape) {
     .nav {
@@ -273,7 +321,7 @@ body {
     }
 } */
 
-@media screen and (min-width: 760px) {
+/* @media screen and (min-width: 760px) {
     .nav {
         margin-top: 220px;
         display: flex;
@@ -307,4 +355,4 @@ body {
         transform: scale(1.4);
     }
 
-}
+} */
