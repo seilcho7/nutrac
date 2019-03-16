@@ -130,3 +130,21 @@ function drawNutritionLabel(){
 
   });
 }
+
+//////////////////////////////////////////////////////////////////////////
+//////////////////// Not button Function ////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+const notButton = document.querySelector('[not-button]');
+
+notButton.addEventListener('click', retrieveNewData);
+function retrieveNewData() {
+    const recipeName = document.querySelector("[data-rName]");
+    const recipeIngredients = document.querySelector("[data-rIngredients]");
+    const recipeInstructions = document.querySelector("[data-rInstructions]");
+    recipeName.textContent= '';
+    recipeIngredients.textContent= '';
+    recipeInstructions.textContent= '';
+    recipeImage.src = '';
+    retrieveData(getRelevantData(mealFinal, vegetarianFinal));
+    console.log(`Test. ${mealFinal} Test. ${vegetarianFinal}`);
+}
