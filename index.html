@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Temp Font -->
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <!-- Rubik Font -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <!-- Normalizer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- Index StyleSheet -->
@@ -19,13 +19,14 @@
     <div class="title">
         <img src="images/title.png">
     </div>
-
+    <!-- Put empty block under title to get rid of margin from nav -->
+    <div class="divider"></div>
     <!-- Nav Div for Meal and Dietary Selection-->
     <nav class="nav" data-nav>
         <!-- Meal Option -->
         <div class="options">
             <div class="meal">
-                <span class="meal-title">Meal:</span>
+                <p>Meal</p>
                 <div class="breakfast">
                     <input name="meal-button" type="radio" id="breakfast">
                     <span>Breakfast</span>
@@ -45,7 +46,7 @@
             </div>
             <!-- Dietary Option-->
             <div class="vegeterian">
-                <span>Vegeterian:</span>
+                <p>Vegeterian</p>
                 <div class="yes-vegetarian">
                     <input name="vegeterian-button" type="radio" id="is-vegetarian">
                     <span>Yes</span>
@@ -58,7 +59,7 @@
         </div>    
             <!-- Submit Button Div Block -->
         <div class="submit-button" >
-            <img src="images/button_submit.png" data-submitButton>
+            <button data-submitButton>Submit</button>
         </div>
     </nav>
 
@@ -85,8 +86,8 @@
 
         </div>
         <div class="nut-not-container"> 
-            <img src="images/button_nut.png" class="nut" nut-button>
-            <img src="images/button_not.png" class="not" not-button>
+            <button class="nut" nut-button>Nut</button>
+            <button class="not" not-button>Not</button>
         </div>
     </div>
 
