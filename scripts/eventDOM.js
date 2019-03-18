@@ -141,10 +141,16 @@ function retrieveNewData() {
     const recipeName = document.querySelector("[data-rName]");
     const recipeIngredients = document.querySelector("[data-rIngredients]");
     const recipeInstructions = document.querySelector("[data-rInstructions]");
+    ///Resets recipe info and loads new recipe info///
     recipeName.textContent= '';
     recipeIngredients.textContent= '';
     recipeInstructions.textContent= '';
     recipeImage.src = '';
     retrieveData(getRelevantData(mealFinal, vegetarianFinal));
+    const NutAmount = document.querySelector('[nut-amount]')
+    ///Sets nutritional info to blank whenever new recipe data is generated/////
+    NutAmount.textContent ='';
+    nutritionContainer.classList.remove('show');
+
     console.log(`Test. ${mealFinal} Test. ${vegetarianFinal}`);
 }
