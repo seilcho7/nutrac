@@ -80,12 +80,15 @@ function setRecipeImage(){
 // recipeDOMS
 function displayRecipeInformation(){
     const recipeName = document.querySelector("[data-rName]");
+    const recipeServings = document.querySelector("[data-rServings]");
     const recipeIngredients = document.querySelector("[data-rIngredients]");
     const recipeInstructions = document.querySelector("[data-rInstructions]");
 
     const nameElement = document.createElement('h3');
     nameElement.textContent = cleanRecipeInfo[4];
     recipeName.appendChild(nameElement);
+    recipeServings.textContent= 'Serves '+cleanRecipeInfo[2]
+
     
     cleanRecipeInfo[0].forEach(function (ingredient){
         const ingredientElement = document.createElement('p');
