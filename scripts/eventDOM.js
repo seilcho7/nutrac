@@ -208,3 +208,11 @@ function displayRestaurants(){
     }
 
 }
+/////////////////////////////////////////////////////////////////////
+/////////////////// x buton functions //////////////////////////////
+///////////////////////////////////////////////////////////////////
+const xButton = document.querySelector('[data-x-button]')
+xButton.addEventListener('click',hideRestaurants)
+function hideRestaurants() {
+    restContainer.classList.remove('show')
+}
