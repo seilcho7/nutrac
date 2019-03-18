@@ -183,6 +183,13 @@ function retrieveNewData() {
 //////////////////// I don't want to cook, show me Restaurants ////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////
 const restLocations = document.querySelector("[data-restLocations]");
+const restContainer = document.querySelector("[data-restContainer]");
+const restButton = document.querySelector("[data-restaurantButton]");
+
+restButton.addEventListener("click", function (){
+    getLocation();
+    restContainer.classList.toggle("show");
+});
 
 function displayRestaurants(){
 
