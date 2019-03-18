@@ -175,3 +175,26 @@ function retrieveNewData() {
 
     console.log(`Test. ${mealFinal} Test. ${vegetarianFinal}`);
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////// I don't want to cook, show me Restaurants ////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+const restLocations = document.querySelector("[data-restLocations]");
+
+function displayRestaurants(){
+
+    for(let i = 0; i < 10; i++){
+        const newDiv = document.createElement('div');
+        const restName = document.createElement('h4');
+        const restAdd = document.createElement('p');
+        const restRate = document.createElement('p');
+        restName.textContent = rawData.restaurants[i].restaurant.name;
+        restAdd.textContent = rawData.restaurants[i].restaurant.location.address;
+        restRate.textContent = rawData.restaurants[i].restaurant.user_rating.aggregate_rating + "/5";
+        newDiv.appendChild(restName);
+        newDiv.appendChild(restAdd);
+        newDiv.appendChild(restRate);
+        restLocations.appendChild(newDiv);
+    }
+
+}
