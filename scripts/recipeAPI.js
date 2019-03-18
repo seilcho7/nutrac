@@ -42,10 +42,10 @@ function getIngredientsList(fetchData){
     let recipeInfo= []
     
     fetchData['extendedIngredients'].forEach(function(ingredient){
-        listOfIngredients.push(`${ingredient['amount']} ${ingredient['unit']} ${ingredient['name']}`);
+        listOfIngredients.push(`${(ingredient['amount']).toFixed(2)} ${ingredient['unit']} ${ingredient['name']}`);
     });
     fetchData['extendedIngredients'].forEach(function(ingredient){
-        ingredientsInfo+=` ${(ingredient[('amount')]).toFixed(2)} ${ingredient['unit']} ${ingredient['name']},`
+        ingredientsInfo+=` ${(ingredient[('amount')]).toFixed(2)} ${ingredient['unit']} ${ingredient['name']},`;
     });
     recipeInfo.push(listOfIngredients) // 0
     recipeInfo.push(ingredientsInfo) // 1
