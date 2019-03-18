@@ -185,8 +185,13 @@ function retrieveNewData() {
 const restLocations = document.querySelector("[data-restLocations]");
 const restContainer = document.querySelector("[data-restContainer]");
 const restButton = document.querySelector("[data-restaurantButton]");
+const restButton2 = document.querySelector("[data-restaurantButton2]");
 
 restButton.addEventListener("click", function (){
+    getLocation();
+    restContainer.classList.toggle("show");
+});
+restButton2.addEventListener("click", function (){
     getLocation();
     restContainer.classList.toggle("show");
 });
