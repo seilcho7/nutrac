@@ -298,10 +298,49 @@ ol li{
 
 }
 
+
+.restaurant-container {
+    display: none;
+}
+
+.restaurant-container {
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+.rest-header {
+    text-align: center;
+}
+
+/* Applies to all phones on portait mode */
+/* @media screen and (max-width: 450px) and (orientation: portrait) {
+    .nav {
+        margin-top: 40%;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        height: 73%;
+        width: 80%;
+        border-radius: 15%/10%;
+        padding-top: 10%;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .meal {
+        display: flex;
+        flex-direction: column;
+
 /* tablet and desktop */
 @media screen and (min-width: 768px) {
     .title img {
         height: 147px;
+
     }
     .meal > p {
         font-size: 30px;
