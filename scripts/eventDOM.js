@@ -198,19 +198,29 @@ function displayRestaurants(){
         const restName = document.createElement('h4');
         const restAdd = document.createElement('p');
         const restRate = document.createElement('p');
+        const iconDiv = document.createElement('span');
         const restPic = document.createElement('a');
         const camIcon = document.createElement('img');
+        const restMenu = document.createElement('a');
+        const menuIcon = document.createElement('img');
         restName.textContent = rawData.restaurants[i].restaurant.name;
         restAdd.textContent = rawData.restaurants[i].restaurant.location.address;
         restRate.textContent = rawData.restaurants[i].restaurant.user_rating.aggregate_rating + "/5";
         camIcon.src = "../images/camera-icon.png";
         restPic.href = rawData.restaurants[i].restaurant.photos_url;
         restPic.target = "_blank";
+        menuIcon.src = "../images/menu-icon.png";
+        restMenu.href = rawData.restaurants[i].restaurant.menu_url;
+        restMenu.target = "_blank";
+        iconDiv.className = "icon-div"
         restPic.appendChild(camIcon);
+        restMenu.appendChild(menuIcon);
+        iconDiv.appendChild(restPic);
+        iconDiv.appendChild(restMenu);
         newDiv.appendChild(restName);
         newDiv.appendChild(restAdd);
         newDiv.appendChild(restRate);
-        newDiv.appendChild(restPic);
+        newDiv.appendChild(iconDiv);
         restLocations.appendChild(newDiv);
     }
 

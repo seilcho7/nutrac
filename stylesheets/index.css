@@ -378,6 +378,10 @@ ol li{
     text-align: center;
 }
 
+.rest-locations img {
+    padding: 5px;
+}
+
 /* tablet and desktop */
 @media screen and (min-width: 768px) {
     .title img {
