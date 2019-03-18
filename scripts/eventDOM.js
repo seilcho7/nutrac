@@ -93,9 +93,18 @@ function displayRecipeInformation(){
         recipeIngredients.appendChild(ingredientElement);
     });
     
-    const instructionElement = document.createElement('p');
-    instructionElement.textContent = cleanRecipeInfo[3];
-    recipeInstructions.appendChild(instructionElement);
+    // const instructionElement = document.createElement('p');
+    const recipeInfoInstructions = cleanRecipeInfo[3];
+    const cleanRecipeInfoSplit = recipeInfoInstructions.split('.')
+    cleanRecipeInfoSplit.pop();
+    console.log(cleanRecipeInfoSplit);
+    cleanRecipeInfoSplit.forEach(function(sentence){
+        const listElement = document.createElement('li');
+        listElement.textContent = sentence; 
+        recipeInstructions.appendChild(listElement);
+    })
+    // instructionElement.textContent = cleanRecipeInfo[3];
+    // recipeInstructions.appendChild(instructionElement);
 }
 
 
