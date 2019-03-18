@@ -20,12 +20,6 @@ body > * {
     }
 }
 
-.animation-background {
-    background: url("../images/background.png") repeat 0 0;
-    animation: slide 15s linear infinite;
-    background-size: 200%;
-}
-
 body {
     flex-direction: column;
     display: flex;
@@ -39,9 +33,9 @@ body {
     justify-content: center;
     position: fixed;
     z-index: 1;
-    /* background-color: #212121; */
-    background: url("../images/background.png") repeat;
-    animation: slide 30s linear infinite;
+    background: url("../images/background.png") repeat 0 0;
+    animation: slide 15s linear infinite;
+    background-size: 200%;
 }
 
 .divider {
@@ -168,7 +162,6 @@ input {
 
 .recipeContainer {
     display: none;
-
 }
 
 .recipeContainer.show {
@@ -213,9 +206,6 @@ ol li{
     padding: 10px 15px 10px 15px;
     /* text-align: left; */
 }
-
-} 
-
 
 .nut-not-container {
     display: flex;
