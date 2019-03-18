@@ -140,12 +140,12 @@ input {
     cursor: pointer; 
 }
 
-.submit-button:hover {
+.restaurant-button2:hover {
     opacity: 0.6;
     color: #212121;
 }
 
-.restaurant-button:hover {
+.restaurant-button2:hover {
     opacity: 0.6;
     color: #212121;
 }
@@ -284,6 +284,26 @@ ol li{
 }
 
 .nut:hover {
+    opacity: 0.6;
+    color: #212121;
+}
+
+.nut:active {
+    transform: scale(0.9);
+}
+
+/* restaurant button */
+.restaurant-button2 {
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: #e78200;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.restaurant-button2:hover {
     opacity: 0.6;
     color: #212121;
 }
@@ -433,5 +453,9 @@ ol li{
 
     .rest-header {
         font-size: 30px;
+    }
+
+    .restaurant-button2 {
+        transform: scale(1.4);
     }
 }
