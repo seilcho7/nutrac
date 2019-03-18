@@ -165,15 +165,29 @@ input {
     margin-bottom: 0;
     text-align: center;
 }
+h2{
+    margin-bottom:0px;
+}
+.recipe-serving{
+    font-size: 14px;
+    text-align:center;
+    background-color: #212121;
+    padding-bottom: 5%;
+}
 
 .direct-rImage {
     width: 80%;
 }
 
-.recipe-instructions p {
-    padding-left: 20px;
-    padding-right: 20px;
+ol {
+    border: 1px solid rgb(94, 94, 94);
+    text-align: left;
+    overflow: scroll;
+    height: 250px;
 }
+ol li{
+    padding: 10px 15px 10px 15px;
+    /* text-align: left; */
 
 .nut-not-container {
     display: flex;
