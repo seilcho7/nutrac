@@ -27,18 +27,18 @@ function getUserInput() {
         vegetarianFinal = "";
         console.log(vegetarianFinal);
     });
-    // document.getElementById('dairy-free').addEventListener('click', function () {
-    //     vegetarianFinal = "%2C+dairy+free";
-    //     console.log(vegetarianFinal);
-    // });
-    // document.getElementById('gluten-free').addEventListener('click', function () {
-    //     vegetarianFinal = "%2C+gluten+free";
-    //     console.log(vegetarianFinal);
-    // });
-    // document.getElementById('vegan').addEventListener('click', function () {
-    //     vegetarianFinal = "%2Cvegan";
-    //     console.log(vegetarianFinal);
-    // });
+    document.getElementById('dairy-free').addEventListener('click', function () {
+        vegetarianFinal = "%2C+dairy+free";
+        console.log(vegetarianFinal);
+    });
+    document.getElementById('gluten-free').addEventListener('click', function () {
+        vegetarianFinal = "%2C+gluten+free";
+        console.log(vegetarianFinal);
+    });
+    document.getElementById('vegan').addEventListener('click', function () {
+        vegetarianFinal = "%2Cvegan";
+        console.log(vegetarianFinal);
+    });
 }
 
 getUserInput();
@@ -83,7 +83,7 @@ function displayRecipeInformation(){
     const recipeIngredients = document.querySelector("[data-rIngredients]");
     const recipeInstructions = document.querySelector("[data-rInstructions]");
 
-    const nameElement = document.createElement('h2');
+    const nameElement = document.createElement('h3');
     nameElement.textContent = cleanRecipeInfo[4];
     recipeName.appendChild(nameElement);
     
