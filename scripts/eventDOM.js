@@ -23,22 +23,22 @@ function getUserInput() {
         vegetarianFinal = "%2Cvegetarian";
         console.log(vegetarianFinal);
     });
-    document.getElementById('no-diet').addEventListener('click', function () {
+    document.getElementById('not-vegetarian').addEventListener('click', function () {
         vegetarianFinal = "";
         console.log(vegetarianFinal);
     });
-    document.getElementById('dairy-free').addEventListener('click', function () {
-        vegetarianFinal = "%2C+dairy+free";
-        console.log(vegetarianFinal);
-    });
-    document.getElementById('gluten-free').addEventListener('click', function () {
-        vegetarianFinal = "%2C+gluten+free";
-        console.log(vegetarianFinal);
-    });
-    document.getElementById('vegan').addEventListener('click', function () {
-        vegetarianFinal = "%2Cvegan";
-        console.log(vegetarianFinal);
-    });
+    // document.getElementById('dairy-free').addEventListener('click', function () {
+    //     vegetarianFinal = "%2C+dairy+free";
+    //     console.log(vegetarianFinal);
+    // });
+    // document.getElementById('gluten-free').addEventListener('click', function () {
+    //     vegetarianFinal = "%2C+gluten+free";
+    //     console.log(vegetarianFinal);
+    // });
+    // document.getElementById('vegan').addEventListener('click', function () {
+    //     vegetarianFinal = "%2Cvegan";
+    //     console.log(vegetarianFinal);
+    // });
 }
 
 getUserInput();
