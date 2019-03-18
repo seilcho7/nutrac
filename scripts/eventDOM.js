@@ -27,18 +27,18 @@ function getUserInput() {
         vegetarianFinal = "";
         console.log(vegetarianFinal);
     });
-    // document.getElementById('dairy-free').addEventListener('click', function () {
-    //     vegetarianFinal = "%2C+dairy+free";
-    //     console.log(vegetarianFinal);
-    // });
-    // document.getElementById('gluten-free').addEventListener('click', function () {
-    //     vegetarianFinal = "%2C+gluten+free";
-    //     console.log(vegetarianFinal);
-    // });
-    // document.getElementById('vegan').addEventListener('click', function () {
-    //     vegetarianFinal = "%2Cvegan";
-    //     console.log(vegetarianFinal);
-    // });
+    document.getElementById('dairy-free').addEventListener('click', function () {
+        vegetarianFinal = "%2C+dairy+free";
+        console.log(vegetarianFinal);
+    });
+    document.getElementById('gluten-free').addEventListener('click', function () {
+        vegetarianFinal = "%2C+gluten+free";
+        console.log(vegetarianFinal);
+    });
+    document.getElementById('vegan').addEventListener('click', function () {
+        vegetarianFinal = "%2Cvegan";
+        console.log(vegetarianFinal);
+    });
 }
 
 getUserInput();
@@ -84,7 +84,7 @@ function displayRecipeInformation(){
     const recipeIngredients = document.querySelector("[data-rIngredients]");
     const recipeInstructions = document.querySelector("[data-rInstructions]");
 
-    const nameElement = document.createElement('h2');
+    const nameElement = document.createElement('h3');
     nameElement.textContent = cleanRecipeInfo[4];
     recipeName.appendChild(nameElement);
     recipeServings.textContent= 'Serves '+cleanRecipeInfo[2]
@@ -177,4 +177,27 @@ function retrieveNewData() {
     nutritionContainer.classList.remove('show');
 
     console.log(`Test. ${mealFinal} Test. ${vegetarianFinal}`);
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////// I don't want to cook, show me Restaurants ////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+const restLocations = document.querySelector("[data-restLocations]");
+
+function displayRestaurants(){
+
+    for(let i = 0; i < 10; i++){
+        const newDiv = document.createElement('div');
+        const restName = document.createElement('h4');
+        const restAdd = document.createElement('p');
+        const restRate = document.createElement('p');
+        restName.textContent = rawData.restaurants[i].restaurant.name;
+        restAdd.textContent = rawData.restaurants[i].restaurant.location.address;
+        restRate.textContent = rawData.restaurants[i].restaurant.user_rating.aggregate_rating + "/5";
+        newDiv.appendChild(restName);
+        newDiv.appendChild(restAdd);
+        newDiv.appendChild(restRate);
+        restLocations.appendChild(newDiv);
+    }
+
 }

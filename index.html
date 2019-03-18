@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="stylesheets/paul_irish_box_model.css">
     <title>Nu.Trac</title>
 </head>
-<body>
+<body class="animation-background">
     <!-- Title with Nu.Trac Logo -->
     <div class="title">
         <img src="images/title.png">
@@ -45,15 +45,27 @@
                 </div>
             </div>
             <!-- Dietary Option-->
-            <div class="vegeterian">
-                <div>Vegeterian</div>
+            <div class="vegetarian">
+                <p>Diet</p>
                 <div class="yes-vegetarian">
-                    <input name="vegeterian-button" type="radio" id="is-vegetarian">
-                    <span>Yes</span>
+                    <input name="vegetarian-button" type="radio" id="is-vegetarian">
+                    <span>Vegetarian</span>
+                </div>
+                <div class="dairy-free">
+                    <input name="dairy-free" type="radio" id="dairy-free">
+                    <span>Dairy-Free</span>
+                </div>
+                <div class="gluten-free">
+                    <input name="gluten-free" type="radio" id="gluten-free">
+                    <span>Gluten-Free</span>
+                </div>
+                <div class="vegan">
+                    <input name="vegan" type="radio" id="vegan">
+                    <span>Vegan</span>
                 </div>
                 <div class="no-vegetarian">
-                    <input name="vegeterian-button" type="radio" id="not-vegetarian">
-                    <span>No</span>
+                    <input name="vegetarian-button" type="radio" id="not-vegetarian">
+                    <span>None</span>
                 </div>
             </div>
         </div>    
@@ -76,7 +88,7 @@
             <img class="direct-rImage" src="" alt="" data-recipeIMG>
         </div>
         
-        <h3>Ingredients</h3>
+        <h3 class="ingredients-label">Ingredients</h3>
         <div class="recipe-ingredients" data-rIngredients>
 
         </div>
@@ -113,10 +125,20 @@
 
     </div>
 
+    <!-- Restaurant Div Block -->
+    <div class="restaurant-container">
+        <div class="rest-header">
+            <h3>Restaurants</h3>
+        </div>
+        <div class="rest-locations" data-restLocations>
+
+        </div>
+    </div>
 
     <script src="scripts/eventDOM.js"></script>
     <script src="scripts/recipeAPI.js"></script>
     <script src="scripts/nutritionAPI.js"></script>
+    <script src="scripts/nearRestaurant.js"></script>
     <script src="scripts/index.js"></script>
 </body>
 </html>
