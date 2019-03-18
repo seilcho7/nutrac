@@ -331,7 +331,8 @@ ol li{
     display: none;
 }
 
-.restaurant-container {
+.restaurant-container.show {
+    display: block;
     padding: 20px;
     font-size: 14px;
     color: white;
