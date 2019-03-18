@@ -198,12 +198,19 @@ function displayRestaurants(){
         const restName = document.createElement('h4');
         const restAdd = document.createElement('p');
         const restRate = document.createElement('p');
+        const restPic = document.createElement('a');
+        const camIcon = document.createElement('img');
         restName.textContent = rawData.restaurants[i].restaurant.name;
         restAdd.textContent = rawData.restaurants[i].restaurant.location.address;
         restRate.textContent = rawData.restaurants[i].restaurant.user_rating.aggregate_rating + "/5";
+        camIcon.src = "../images/camera-icon.png";
+        restPic.href = rawData.restaurants[i].restaurant.photos_url;
+        restPic.target = "_blank";
+        restPic.appendChild(camIcon);
         newDiv.appendChild(restName);
         newDiv.appendChild(restAdd);
         newDiv.appendChild(restRate);
+        newDiv.appendChild(restPic);
         restLocations.appendChild(newDiv);
     }
 
