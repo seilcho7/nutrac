@@ -332,6 +332,7 @@ ol li{
     text-align: center;
 }
 
+
 /* Applies to all phones on portait mode */
 /* @media screen and (max-width: 450px) and (orientation: portrait) {
     .nav {
