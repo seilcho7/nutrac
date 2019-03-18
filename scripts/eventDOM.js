@@ -27,6 +27,18 @@ function getUserInput() {
         vegetarianFinal = "";
         console.log(vegetarianFinal);
     });
+    // document.getElementById('dairy-free').addEventListener('click', function () {
+    //     vegetarianFinal = "%2C+dairy+free";
+    //     console.log(vegetarianFinal);
+    // });
+    // document.getElementById('gluten-free').addEventListener('click', function () {
+    //     vegetarianFinal = "%2C+gluten+free";
+    //     console.log(vegetarianFinal);
+    // });
+    // document.getElementById('vegan').addEventListener('click', function () {
+    //     vegetarianFinal = "%2Cvegan";
+    //     console.log(vegetarianFinal);
+    // });
 }
 
 getUserInput();
