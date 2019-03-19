@@ -60,6 +60,7 @@ body {
 }
 
 .spin {
+    z-index: 6; 
     display: inline-block;
     width: 64px;
     height: 64px;

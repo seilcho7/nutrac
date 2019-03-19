@@ -186,13 +186,15 @@ const restLocations = document.querySelector("[data-restLocations]");
 const restContainer = document.querySelector("[data-restContainer]");
 const restButton = document.querySelector("[data-restaurantButton]");
 const restButton2 = document.querySelector("[data-restaurantButton2]");
-
+const loadingDiv = document.querySelector("[data-load]")
 restButton.addEventListener("click", function (){
+    addSpin() 
     window.scrollTo(0,0);
     getLocation();
     restContainer.classList.toggle("show");
 });
 restButton2.addEventListener("click", function (){
+    addSpin();
     window.scrollTo(0,0);
     getLocation();
     restContainer.classList.toggle("show");
@@ -229,8 +231,23 @@ function displayRestaurants(){
         newDiv.appendChild(iconDiv);
         restLocations.appendChild(newDiv);
     }
+}
+////////////////////////////////////////////////////////
+//////////////// loading screen /////////////////////
+////////////////////////////////////////////////////
+
+function addSpin () {
+    loadingDiv.classList.toggle('loading')
+    setTimeout(function(){
+    loadingDiv.classList.toggle('loading')
+    }, 1000 )
+    
 
 }
+
+
+
+
 /////////////////////////////////////////////////////////////////////
 /////////////////// x buton functions //////////////////////////////
 ///////////////////////////////////////////////////////////////////
