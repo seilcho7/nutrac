@@ -119,6 +119,7 @@ function displayRecipeInformation(){
 /// fetch nutrition. Nutrition button on click Should run this function. 
 function passNutInfo() {
     fetchNutrition(cleanRecipeInfo[1]);
+    nutritionContainer.textContent = '';
     nutritionContainer.classList.toggle('show');
     // NutInfo.textContent = `Calories: ${totalCalories} Trans Fats: ${totalTFat} Saturated Fat: ${totalSFat} Cholesterol: ${totalCholesterol} Sodium: ${totalSodium} Carbohydrates: ${totalCarbohydrates} Fiber: ${totalDFiber} Sugar: ${totalSugar} Protein: ${totalProtein} Potassium: ${totalPotassium}`;
     nutritionContainer.scrollIntoView();
@@ -188,6 +189,7 @@ const restContainer = document.querySelector("[data-restContainer]");
 const restButton = document.querySelector("[data-restaurantButton]");
 const restButton2 = document.querySelector("[data-restaurantButton2]");
 const loadingDiv = document.querySelector("[data-load]")
+const loadingDiv2 = document.querySelector("[data-load2]")
 restButton.addEventListener("click", function (){
     addSpin() 
     window.scrollTo(0,0);
@@ -195,6 +197,8 @@ restButton.addEventListener("click", function (){
     restContainer.classList.toggle("show");
 });
 restButton2.addEventListener("click", function (){
+    addSpin2();
+    window.scrollTo(0,0);
     addSpin();
     getLocation();
     restContainer.classList.toggle("show");
@@ -251,15 +255,17 @@ function displayRestaurants(){
 ////////////////////////////////////////////////////
 
 function addSpin () {
-    loadingDiv.classList.toggle('loading')
+    loadingDiv.classList.toggle('spin')
     setTimeout(function(){
-    loadingDiv.classList.toggle('loading')
+    loadingDiv.classList.remove('spin')
     }, 1000 )
-    
-
 }
-
-
+function addSpin2() {
+    loadingDiv2.classList.toggle('spin2')
+    setTimeout(function(){
+        loadingDiv2.classList.remove('spin2')
+        }, 1000 )
+}
 
 
 /////////////////////////////////////////////////////////////////////

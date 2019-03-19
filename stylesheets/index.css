@@ -66,7 +66,7 @@ body {
     display: none;
 }
 
-.spin {
+.loading.spin {
     z-index: 6; 
     display: inline-block;
     width: 64px;
@@ -84,6 +84,31 @@ body {
     border-color: white transparent white transparent;
     animation: ring-spin 1.2s linear infinite;
 }
+.loading2 {
+    display: none;
+}
+
+.loading2.spin2 {
+    padding-top:15px;
+    z-index: 7; 
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+}
+
+.spin2:after {
+    content: " ";
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid white;
+    border-color: white transparent white transparent;
+    animation: ring-spin 1.2s linear infinite;
+}
+
+
 /* Contain both meal and vegeterian */
 .nav {
     display: flex;
