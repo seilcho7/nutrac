@@ -29,7 +29,7 @@ html {
 /* window scroll up animation */
 @keyframes move-up {
     0% { 
-        transform: translateY(100%); 
+        transform: translateY(5000px); 
     }
     100% { 
         transform: translateY(0px);
@@ -64,6 +64,8 @@ body {
 /* loading */
 .loading {
     display: none;
+    position: fixed;
+    top: 180px;
 }
 
 .loading.spin {
@@ -270,7 +272,7 @@ input {
     background-color: black;
     margin-top: 110px;
     margin-bottom: 20px;
-    animation: move-up 3s ease-in-out;
+    animation: move-up 2s ease-in-out;
 }
 
 .rest-locations div {
