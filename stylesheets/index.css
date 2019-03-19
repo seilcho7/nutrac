@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -29,15 +30,6 @@ html {
 @keyframes move-up {
     0% { 
         transform: translateY(100%); 
-    }
-    100% { 
-        transform: translateY(0px);
-    }
-}
-/* window scroll down animation */
-@keyframes move-down {
-    0% { 
-        transform: translateY(-1000px); 
     }
     100% { 
         transform: translateY(0px);
@@ -394,7 +386,6 @@ ol li{
     margin-top: 0;
     margin-bottom: 2%;
     color: white;
-    animation: move-down 1.5s ease-in-out;
 }
 
 /* ingredients label */
