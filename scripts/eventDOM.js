@@ -199,7 +199,6 @@ restButton.addEventListener("click", function (){
 restButton2.addEventListener("click", function (){
     addSpin2();
     window.scrollTo(0,0);
-    addSpin();
     getLocation();
     restContainer.classList.toggle("show");
 });
