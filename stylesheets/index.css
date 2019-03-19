@@ -513,9 +513,9 @@ ol li{
     .x-button {
         width: 40px;
         height: 40px;
-        right: 210px;
-        top: 170px;
         font-size: 20px;
+        top: 170px;
+        right: 10%;
     }
 
     .rest-header {
