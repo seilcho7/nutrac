@@ -604,3 +604,12 @@ ol li{
         margin: 20px 80px;
     }
 }
+
+.checked {
+    color: orange;
+    border: none;
+}
+
+.all-stars {
+    border: none;
+}
