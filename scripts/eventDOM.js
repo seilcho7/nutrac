@@ -58,6 +58,7 @@ function submitButtonRetrieve() {
     // setRecipeImage(); MOVED TO SECOND THEN STATEMENT IN RETRIEVE DATA ------ DELETE THIS LINE
     nav.classList.toggle('hide');
     recipeContainer.classList.toggle('show');
+
 }
 
 // submitButton Event Listener
@@ -118,7 +119,7 @@ function displayRecipeInformation(){
 /// Nutrition button should retrieve nutritional info from array and pass it on to
 /// fetch nutrition. Nutrition button on click Should run this function. 
 function passNutInfo() {
-    fetchNutrition(cleanRecipeInfo[1]);
+    // fetchNutrition(cleanRecipeInfo[1]);
     nutritionContainer.classList.toggle('show');
     // NutInfo.textContent = `Calories: ${totalCalories} Trans Fats: ${totalTFat} Saturated Fat: ${totalSFat} Cholesterol: ${totalCholesterol} Sodium: ${totalSodium} Carbohydrates: ${totalCarbohydrates} Fiber: ${totalDFiber} Sugar: ${totalSugar} Protein: ${totalProtein} Potassium: ${totalPotassium}`;
     nutritionContainer.scrollIntoView();
