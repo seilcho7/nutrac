@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -28,12 +29,10 @@ html {
 /* window scroll up animation */
 @keyframes move-up {
     0% { 
-        transform: translateY(1000px); 
-        opacity: 0;
+        transform: translateY(100%); 
     }
     100% { 
-        transform: translateY(0px);  
-        opacity: 1;
+        transform: translateY(0px);
     }
 }
 
@@ -271,7 +270,7 @@ input {
     background-color: black;
     margin-top: 110px;
     margin-bottom: 20px;
-    animation: move-up 1.5s ease-in-out;
+    animation: move-up 3s ease-in-out;
 }
 
 .rest-locations div {
@@ -299,8 +298,7 @@ input {
     background-color: #212121;
     font-size: 16px;
     padding: 1px;
-    margin-top: 12px;
-    margin-bottom: 0;
+    margin: 12px 0;
     text-align: center;
 }
 
@@ -310,11 +308,9 @@ h2{
 
 .recipe-serving{
     font-size: 14px;
-    text-align:center;
-    background-color: #212121;
-    /* background-color: black; */
-    padding-bottom: 12px;
-    margin-bottom: 12px;
+    text-align: center;
+    margin-top: 12px;
+    padding-bottom: 10px;
 }
 
 .direct-rImage {
@@ -415,7 +411,6 @@ ol li{
     margin-top: 0;
     margin-bottom: 2%;
     color: white;
-    animation: move-up 1.5s ease-in-out;
 }
 
 /* ingredients label */
@@ -572,7 +567,6 @@ ol li{
 
     .recipe-serving{
         font-size: 24px;
-        padding-bottom: 30px;
         margin-bottom: 20px;
     }
 
@@ -625,4 +619,13 @@ ol li{
         line-height: 36px;
         margin: 20px 80px;
     }
+}
+
+.checked {
+    color: orange;
+    border: none;
+}
+
+.all-stars {
+    border: none;
 }
