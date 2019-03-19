@@ -16,7 +16,7 @@ body > * {
         background-position: 0 0;
     }
     50% { 
-        background-position: 0 50%;
+        background-position: 0 100%;
     }
 }
 
@@ -35,7 +35,7 @@ body {
     z-index: 2;
     background: url("../images/background.png") repeat;
     animation: slide 15s linear infinite;
-    background-size: 120%;
+    background-size: 100%;
 }
 
 .divider {
@@ -225,25 +225,26 @@ input {
     color: white;
 }
 
-
-
 .recipe-name {
-    background-color:black;
+    background-color: #212121;
     font-size: 15px;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    margin-top: 2%;
+    padding: 1px;
+    margin-top: 12px;
     margin-bottom: 0;
     text-align: center;
 }
+
 h2{
     margin-bottom:0px;
 }
+
 .recipe-serving{
     font-size: 14px;
     text-align:center;
     background-color: #212121;
-    padding-bottom: 5%;
+    /* background-color: black; */
+    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .direct-rImage {
@@ -344,27 +345,38 @@ ol li{
 
 /* ingredients label */
 .ingredients-label {
-    background-color:black;
+    background-color:#212121;
     font-size: 16px;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    margin-top: 15%;;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 26px;
     margin-bottom: 0;
 }
-/* instruction label */
-.instruction-label {
-    background-color:black;
-    font-size: 16px;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    margin-top: 15%;;
-    margin-bottom: 0;
+.ingredients-container {
+    display: flex;
+    justify-content: center;
 }
-
+/* ingredients list */
 .recipe-ingredients {
     font-size: 14px;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: left;
+}
+/* instruction label */
+.instruction-label {
+    background-color:#212121;
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 26px;
+    margin-bottom: 0;
+}
+
+.recipe-instructions {
+    font-size: 14px;
+    border: 1px solid white;
+    margin: 10px;
 }
 
 .nutHeader {
@@ -449,6 +461,41 @@ ol li{
 
     .rest-header {
         font-size: 30px;
+    }
+
+    .recipe-name {
+        font-size: 30px;
+        padding-top: 1px;
+        margin-top: 66px;
+    }
+
+    .recipe-serving{
+        font-size: 24px;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+    }
+
+    .ingredients-label {
+        font-size: 30px;
+        margin-top: 60px;
+        padding: 20px;
+    }
+
+    .recipe-ingredients {
+        font-size: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .instruction-label {
+        font-size: 30px;
+        padding: 20px;
+        margin-top: 32px;
+    }
+
+    .recipe-instructions {
+        font-size: 24px;
+        border: 1px solid white;
+        margin: 16px;
     }
 
     .nut {
