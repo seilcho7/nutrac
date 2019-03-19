@@ -136,7 +136,7 @@ const nutritionContainer = document.querySelector('[data-nutritionContainer]');
 function drawNutritionLabel(){
     let servingsDivider = cleanRecipeInfo[2]
     const NutAmount=  document.querySelector('[nut-amount]');
-    let nutritionLabelArray = [
+    let nutritionLabelArray = [ cleanRecipeInfo[2],
         (totalCalories/servingsDivider).toFixed(0), 
         (totalTFat/servingsDivider).toFixed(1), 
         (totalSFat/servingsDivider).toFixed(1),
