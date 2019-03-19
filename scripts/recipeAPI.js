@@ -25,6 +25,7 @@ function retrieveData(recipeURL) {
         cleanRecipeInfo = getIngredientsList(recipeInfoArray);
         setRecipeImage();
         displayRecipeInformation();
+        fetchNutrition(cleanRecipeInfo[1]);
         return recipeInfoArray;
         
     });
