@@ -5,7 +5,7 @@ html, body {
 }
 
 html {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 /* title background movement */
@@ -65,7 +65,7 @@ body {
 .loading {
     display: none;
     position: fixed;
-    top: 180px;
+    top: 130px;
 }
 
 .loading.spin {
@@ -73,6 +73,7 @@ body {
     display: inline-block;
     width: 64px;
     height: 64px;
+    background-color: black;
 }
 
 .spin:after {
@@ -83,11 +84,14 @@ body {
     margin: 1px;
     border-radius: 50%;
     border: 5px solid white;
-    border-color: white transparent white transparent;
+    border-color: #ec4c4c transparent #0DDB73 transparent;
     animation: ring-spin 1.2s linear infinite;
 }
+
 .loading2 {
     display: none;
+    position: absolute;
+    top: 130px;
 }
 
 .loading2.spin2 {
@@ -106,7 +110,7 @@ body {
     margin: 1px;
     border-radius: 50%;
     border: 5px solid white;
-    border-color: white transparent white transparent;
+    border-color: #ec4c4c transparent #0DDB73 transparent;
     animation: ring-spin 1.2s linear infinite;
 }
 
@@ -299,7 +303,7 @@ input {
 .recipe-name {
     background-color: #212121;
     font-size: 16px;
-    padding: 1px;
+    padding: 1px 6px;
     margin: 12px 0;
     text-align: center;
 }
@@ -484,6 +488,10 @@ ol li{
 
 /* tablet and desktop */
 @media screen and (min-width: 768px) {
+    .loading {
+        top: 200px;
+    }
+    
     .title {
         width: 70%;
     }
