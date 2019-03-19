@@ -121,6 +121,8 @@ function passNutInfo() {
     fetchNutrition(cleanRecipeInfo[1]);
     nutritionContainer.classList.toggle('show');
     // NutInfo.textContent = `Calories: ${totalCalories} Trans Fats: ${totalTFat} Saturated Fat: ${totalSFat} Cholesterol: ${totalCholesterol} Sodium: ${totalSodium} Carbohydrates: ${totalCarbohydrates} Fiber: ${totalDFiber} Sugar: ${totalSugar} Protein: ${totalProtein} Potassium: ${totalPotassium}`;
+    // setTimeout(500);
+    window.scrollTo(0,10000);
 }
 
 ///Function sets text content of nut info to blank and adds event listener to Nut Button. Upon clicking
