@@ -119,7 +119,6 @@ function displayRecipeInformation(){
 /// fetch nutrition. Nutrition button on click Should run this function. 
 function passNutInfo() {
     fetchNutrition(cleanRecipeInfo[1]);
-    nutritionContainer.textContent = '';
     nutritionContainer.classList.toggle('show');
     // NutInfo.textContent = `Calories: ${totalCalories} Trans Fats: ${totalTFat} Saturated Fat: ${totalSFat} Cholesterol: ${totalCholesterol} Sodium: ${totalSodium} Carbohydrates: ${totalCarbohydrates} Fiber: ${totalDFiber} Sugar: ${totalSugar} Protein: ${totalProtein} Potassium: ${totalPotassium}`;
     nutritionContainer.scrollIntoView();
@@ -255,7 +254,7 @@ function displayRestaurants(){
 //////////////// loading screen /////////////////////
 ////////////////////////////////////////////////////
 
-function addSpin () {
+function addSpin() {
     loadingDiv.classList.toggle('spin')
     setTimeout(function(){
     loadingDiv.classList.remove('spin')
