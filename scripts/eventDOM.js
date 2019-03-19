@@ -119,6 +119,7 @@ function displayRecipeInformation(){
 /// fetch nutrition. Nutrition button on click Should run this function. 
 function passNutInfo() {
     fetchNutrition(cleanRecipeInfo[1]);
+    nutritionContainer.textContent = '';
     nutritionContainer.classList.toggle('show');
     // NutInfo.textContent = `Calories: ${totalCalories} Trans Fats: ${totalTFat} Saturated Fat: ${totalSFat} Cholesterol: ${totalCholesterol} Sodium: ${totalSodium} Carbohydrates: ${totalCarbohydrates} Fiber: ${totalDFiber} Sugar: ${totalSugar} Protein: ${totalProtein} Potassium: ${totalPotassium}`;
     nutritionContainer.scrollIntoView();
@@ -149,8 +150,9 @@ function drawNutritionLabel(){
         (totalPotassium/servingsDivider).toFixed(1)
     ];
 // for each item in nutritional info array create child paragraph
+    console.log(nutritionLabelArray);
     nutritionLabelArray.forEach(function(nutrient){
-        const anchorElement = document.createElement('div')
+        const anchorElement = document.createElement('div');
         anchorElement.textContent = nutrient;
         NutAmount.appendChild(anchorElement);
     });
