@@ -43,8 +43,8 @@ function fetchNutrition(string){
             "x-app-key":"f219f153fef321315ddf906f69ff2f52",
             "x-remote-user-id":"0"
         },
-        "referrer":"https://trackapi.nutritionix.com/docs/",
-        "referrerPolicy":"no-referrer-when-downgrade",
+        // "referrer":"https://trackapi.nutritionix.com/docs/",
+        // "referrerPolicy":"no-referrer-when-downgrade",
         "body": bodyQ,
         "method":"POST",
         "mode":"cors"
