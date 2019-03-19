@@ -133,26 +133,26 @@ const nutritionContainer = document.querySelector('[data-nutritionContainer]');
 
 // Adds nutritional info paragraph divs 
 function drawNutritionLabel(){
-  let servingsDivider = cleanRecipeInfo[2]
-  const NutAmount=  document.querySelector('[nut-amount]');
-  let nutritionLabelArray = [ (totalCalories/servingsDivider).toFixed(0), 
-    (totalTFat/servingsDivider).toFixed(1), 
-    (totalSFat/servingsDivider).toFixed(1),
-    (totalCholesterol/servingsDivider).toFixed(1),
-    (totalSodium/servingsDivider).toFixed(1),
-    (totalCarbohydrates/servingsDivider).toFixed(1),
-    (totalDFiber/servingsDivider).toFixed(1),
-    (totalSugar/servingsDivider).toFixed(1),
-    (totalProtein/servingsDivider).toFixed(1),
-    (totalPotassium/servingsDivider).toFixed(1)
-];
+    let servingsDivider = cleanRecipeInfo[2]
+    const NutAmount=  document.querySelector('[nut-amount]');
+    let nutritionLabelArray = [ cleanRecipeInfo[2],
+        (totalCalories/servingsDivider).toFixed(0), 
+        (totalTFat/servingsDivider).toFixed(1), 
+        (totalSFat/servingsDivider).toFixed(1),
+        (totalCholesterol/servingsDivider).toFixed(1),
+        (totalSodium/servingsDivider).toFixed(1),
+        (totalCarbohydrates/servingsDivider).toFixed(1),
+        (totalDFiber/servingsDivider).toFixed(1),
+        (totalSugar/servingsDivider).toFixed(1),
+        (totalProtein/servingsDivider).toFixed(1),
+        (totalPotassium/servingsDivider).toFixed(1)
+    ];
 // for each item in nutritional info array create child paragraph
-  nutritionLabelArray.forEach(function(nutrient){
-      const anchorElement = document.createElement('div')
-      anchorElement.textContent = nutrient;
-      NutAmount.appendChild(anchorElement);
-
-  });
+    nutritionLabelArray.forEach(function(nutrient){
+        const anchorElement = document.createElement('div')
+        anchorElement.textContent = nutrient;
+        NutAmount.appendChild(anchorElement);
+    });
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -188,16 +188,17 @@ const restButton = document.querySelector("[data-restaurantButton]");
 const restButton2 = document.querySelector("[data-restaurantButton2]");
 
 restButton.addEventListener("click", function (){
+    window.scrollTo(0,0);
     getLocation();
     restContainer.classList.toggle("show");
 });
 restButton2.addEventListener("click", function (){
+    window.scrollTo(0,0);
     getLocation();
     restContainer.classList.toggle("show");
 });
 
 function displayRestaurants(){
-
     for(let i = 0; i < 10; i++){
         const newDiv = document.createElement('div');
         const restName = document.createElement('h4');
