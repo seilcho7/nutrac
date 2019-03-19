@@ -188,16 +188,17 @@ const restButton = document.querySelector("[data-restaurantButton]");
 const restButton2 = document.querySelector("[data-restaurantButton2]");
 
 restButton.addEventListener("click", function (){
+    window.scrollTo(0,0);
     getLocation();
     restContainer.classList.toggle("show");
 });
 restButton2.addEventListener("click", function (){
+    window.scrollTo(0,0);
     getLocation();
     restContainer.classList.toggle("show");
 });
 
 function displayRestaurants(){
-
     for(let i = 0; i < 10; i++){
         const newDiv = document.createElement('div');
         const restName = document.createElement('h4');
