@@ -213,16 +213,29 @@ function displayRestaurants(){
         const camIcon = document.createElement('img');
         const restMenu = document.createElement('a');
         const menuIcon = document.createElement('img');
+        const starDiv = document.createElement('nav');
+
         restName.textContent = rawData.restaurants[i].restaurant.name;
         restAdd.textContent = rawData.restaurants[i].restaurant.location.address;
         restRate.textContent = rawData.restaurants[i].restaurant.user_rating.aggregate_rating + "/5";
+        
+        let totalRating = Math.round(rawData.restaurants[i].restaurant.user_rating.aggregate_rating);
+        for(let i = 0; i < totalRating; i++){
+            const starIcon = document.createElement('span');
+            starIcon.className = "fa fa-star checked";
+            starDiv.appendChild(starIcon);
+        }
+
         camIcon.src = "../images/camera-icon.png";
         restPic.href = rawData.restaurants[i].restaurant.photos_url;
         restPic.target = "_blank";
+
         menuIcon.src = "../images/menu-icon.png";
         restMenu.href = rawData.restaurants[i].restaurant.menu_url;
         restMenu.target = "_blank";
+
         iconDiv.className = "icon-div"
+
         restPic.appendChild(camIcon);
         restMenu.appendChild(menuIcon);
         iconDiv.appendChild(restPic);
@@ -230,6 +243,7 @@ function displayRestaurants(){
         newDiv.appendChild(restName);
         newDiv.appendChild(restAdd);
         newDiv.appendChild(restRate);
+        newDiv.appendChild(starDiv);
         newDiv.appendChild(iconDiv);
         restLocations.appendChild(newDiv);
     }
