@@ -82,7 +82,7 @@ body {
     display: inline-block;
     width: 64px;
     height: 64px;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .spin:after {
