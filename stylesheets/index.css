@@ -37,10 +37,13 @@ html {
 }
 /* x-button show animation */
 @keyframes x-show {
-    from { 
+    0% { 
         opacity: 0; 
     }
-    to {
+    99% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }
@@ -192,6 +195,12 @@ input {
     font-size: 14px;
 }
 
+/* change color of label when button is checked */
+input[type="radio"]:checked + span {
+    color: #0DDB73;
+}
+    
+
 /* SUBMIT BUTTON */
 .submit-restaurant {
     display: flex;
@@ -260,7 +269,7 @@ input {
     right: 0px;
     top: 110px;
     opacity: 1;
-    animation: x-show 8s ease-in-out;
+    animation: x-show 3s linear;
 }
 
 .x-button:hover {
