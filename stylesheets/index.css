@@ -148,7 +148,10 @@ body {
 /* meal label */
 .meal > p {
     font-size: 16px;
-    margin-bottom: 10px;
+    background-color: #212121;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
 }
 
 /* add pointer when hover over button */
@@ -168,7 +171,10 @@ input {
 /* vegetarian label */
 .vegetarian > p {
     font-size: 16px;
-    margin-bottom: 10px;
+    background-color: #212121;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
 }
 
 .meal > * {
@@ -209,6 +215,7 @@ input {
     border: none;
     transition-duration: 0.4s;
     cursor: pointer; 
+    text-align: center;
 }
 
 .restaurant-button2:hover {
