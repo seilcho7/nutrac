@@ -58,7 +58,6 @@ function submitButtonRetrieve() {
     // setRecipeImage(); MOVED TO SECOND THEN STATEMENT IN RETRIEVE DATA ------ DELETE THIS LINE
     nav.classList.toggle('hide');
     recipeContainer.classList.toggle('show');
-
 }
 
 // submitButton Event Listener
@@ -119,7 +118,7 @@ function displayRecipeInformation(){
 /// Nutrition button should retrieve nutritional info from array and pass it on to
 /// fetch nutrition. Nutrition button on click Should run this function. 
 function passNutInfo() {
-    // fetchNutrition(cleanRecipeInfo[1]);
+    fetchNutrition(cleanRecipeInfo[1]);
     nutritionContainer.classList.toggle('show');
     // NutInfo.textContent = `Calories: ${totalCalories} Trans Fats: ${totalTFat} Saturated Fat: ${totalSFat} Cholesterol: ${totalCholesterol} Sodium: ${totalSodium} Carbohydrates: ${totalCarbohydrates} Fiber: ${totalDFiber} Sugar: ${totalSugar} Protein: ${totalProtein} Potassium: ${totalPotassium}`;
     nutritionContainer.scrollIntoView();
@@ -178,7 +177,11 @@ function retrieveNewData() {
     ///Sets nutritional info to blank whenever new recipe data is generated/////
     NutAmount.textContent ='';
     nutritionContainer.classList.remove('show');
-
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    
     console.log(`Test. ${mealFinal} Test. ${vegetarianFinal}`);
 }
 
@@ -192,13 +195,15 @@ const restButton2 = document.querySelector("[data-restaurantButton2]");
 const loadingDiv = document.querySelector("[data-load]")
 const loadingDiv2 = document.querySelector("[data-load2]")
 restButton.addEventListener("click", function (){
-    addSpin();
+    addSpin() 
     window.scrollTo(0,0);
+    getLocation();
     restContainer.classList.toggle("show");
 });
 restButton2.addEventListener("click", function (){
     addSpin2();
     window.scrollTo(0,0);
+    getLocation();
     restContainer.classList.toggle("show");
 });
 
@@ -253,16 +258,16 @@ function displayRestaurants(){
 ////////////////////////////////////////////////////
 
 function addSpin() {
-    loadingDiv.classList.toggle('spin');
+    loadingDiv.classList.toggle('spin')
     setTimeout(function(){
-    loadingDiv.classList.remove('spin')
-    }, 1000 );
+        loadingDiv.classList.remove('spin')
+        }, 1500 )
 }
 function addSpin2() {
     loadingDiv2.classList.toggle('spin2')
     setTimeout(function(){
         loadingDiv2.classList.remove('spin2')
-        }, 1000 );
+        }, 1500 )
 }
 
 
@@ -270,7 +275,7 @@ function addSpin2() {
 /////////////////// x buton functions //////////////////////////////
 ///////////////////////////////////////////////////////////////////
 const xButton = document.querySelector('[data-x-button]')
-xButton.addEventListener('click',hideRestaurants);
+xButton.addEventListener('click',hideRestaurants)
 function hideRestaurants() {
-    restContainer.classList.remove('show');
+    restContainer.classList.remove('show')
 }

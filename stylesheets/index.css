@@ -61,7 +61,7 @@ body {
     opacity: 0.8;
 }
 
-/* loading */
+/* loading logo */
 .loading {
     display: none;
     position: fixed;
@@ -83,7 +83,7 @@ body {
     height: 46px;
     margin: 1px;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 8px solid white;
     border-color: #ec4c4c transparent #0DDB73 transparent;
     animation: ring-spin 1.2s linear infinite;
 }
@@ -109,11 +109,10 @@ body {
     height: 46px;
     margin: 1px;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 8px solid white;
     border-color: #ec4c4c transparent #0DDB73 transparent;
     animation: ring-spin 1.2s linear infinite;
 }
-
 
 /* Contain both meal and vegeterian */
 .nav {
@@ -124,14 +123,11 @@ body {
     visibility: visible;
     background-color: black;
     color: white;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .nav.hide {
     display: none;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s ease-in-out 1s, opacity 1s ease-in-out;
 }
 
 .options {
@@ -234,20 +230,13 @@ input {
 
 .rest-header {
     font-size: 16px;
-    padding: 0;
+    padding: 12px 12px;
     margin: 0;
+    background-color: #212121;
 }
 
 .restaurant-container {
     display: none;
-}
-
-.restaurant-x {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #212121;
-    padding: 12px 0;
 }
 
 .x-button {
@@ -370,7 +359,7 @@ ol li{
 
 /* restaurant button */
 .restaurant-button2 {
-    width: 100px;
+    width: 116px;
     height: 35px;
     color: white;
     background-color: #e78200;
@@ -494,7 +483,7 @@ ol li{
 }
 
 /* tablet and desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .loading {
         top: 200px;
     }
@@ -550,7 +539,7 @@ ol li{
         padding-top: 60px;
     }
 
-    .restaurant-x {
+    .rest-header {
         padding: 20px 0;
         font-size: 30px;
     }
