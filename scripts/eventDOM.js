@@ -118,7 +118,7 @@ function displayRecipeInformation(){
 /// Nutrition button should retrieve nutritional info from array and pass it on to
 /// fetch nutrition. Nutrition button on click Should run this function. 
 function passNutInfo() {
-    fetchNutrition(cleanRecipeInfo[1]);
+    // fetchNutrition(cleanRecipeInfo[1]);
     nutritionContainer.classList.toggle('show');
     // NutInfo.textContent = `Calories: ${totalCalories} Trans Fats: ${totalTFat} Saturated Fat: ${totalSFat} Cholesterol: ${totalCholesterol} Sodium: ${totalSodium} Carbohydrates: ${totalCarbohydrates} Fiber: ${totalDFiber} Sugar: ${totalSugar} Protein: ${totalProtein} Potassium: ${totalPotassium}`;
     nutritionContainer.scrollIntoView();
@@ -195,15 +195,15 @@ const restButton2 = document.querySelector("[data-restaurantButton2]");
 const loadingDiv = document.querySelector("[data-load]")
 const loadingDiv2 = document.querySelector("[data-load2]")
 restButton.addEventListener("click", function (){
-    addSpin() 
+    addSpin();
     window.scrollTo(0,0);
-    getLocation();
+    // getLocation();
     restContainer.classList.toggle("show");
 });
 restButton2.addEventListener("click", function (){
     addSpin2();
     window.scrollTo(0,0);
-    getLocation();
+    // getLocation();
     restContainer.classList.toggle("show");
 });
 
