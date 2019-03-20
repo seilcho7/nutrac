@@ -35,6 +35,15 @@ html {
         transform: translateY(0px);
     }
 }
+/* x-button show animation */
+@keyframes x-show {
+    from { 
+        opacity: 0; 
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 body {
     flex-direction: column;
@@ -250,6 +259,8 @@ input {
     position: fixed;
     right: 0px;
     top: 110px;
+    opacity: 1;
+    animation: x-show 8s ease-in-out;
 }
 
 .x-button:hover {
@@ -769,13 +780,4 @@ ol li{
         line-height: 36px;
         margin: 20px 0;
     }
-}
-
-.checked {
-    color: orange;
-    border: none;
-}
-
-.all-stars {
-    border: none;
 }
