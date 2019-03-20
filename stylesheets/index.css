@@ -270,6 +270,7 @@ input[type="radio"]:checked + span {
     top: 110px;
     opacity: 1;
     animation: x-show 3s linear;
+    text-align: center;
 }
 
 .x-button:hover {
@@ -614,9 +615,9 @@ ol li{
     }
 
     .recipe-instructions {
-        font-size: 24px;
+        font-size: 20px;
         border: 1px solid white;
-        margin: 16px;
+        margin: 6px;
     }
 
     .nut {
@@ -758,9 +759,9 @@ ol li{
     }
 
     .recipe-instructions {
-        font-size: 24px;
+        font-size: 20px;
         border: 1px solid white;
-        margin: 16px;
+        margin: 6px;
     }
 
     .nut {
