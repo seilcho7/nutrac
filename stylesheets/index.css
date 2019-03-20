@@ -237,9 +237,18 @@ input[type="radio"]:checked + span {
     color: #212121;
 }
 
+.submit-button:hover {
+    opacity: 0.6;
+    color: #212121;
+}
 
 .submit-button:active {
     transform: scale(0.9);
+}
+
+.restaurant-button:hover {
+    opacity: 0.6;
+    color: #212121;
 }
 
 .restaurant-button:active {
