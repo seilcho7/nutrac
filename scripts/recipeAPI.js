@@ -14,7 +14,7 @@ function retrieveData(recipeURL) {
             // SEIL API "X-Rapidapi-Key": "545361c132msh5ff49c601f2b8bdp196a27jsn49e509407619"
             // ASHISH API "X-Rapidapi-Key": "f4c07c8954msh28a4e5cf34521fcp114488jsn4e18f0aabd53"
             // ANTONIO API "X-Rapidapi-Key": "8391aa4cdbmshde28ddc86fa9aecp1d4b08jsn757b24698283"
-            "X-Rapidapi-Key": "8391aa4cdbmshde28ddc86fa9aecp1d4b08jsn757b24698283"
+            "X-Rapidapi-Key": "545361c132msh5ff49c601f2b8bdp196a27jsn49e509407619"
         }
     })
     .then(function (response) {
