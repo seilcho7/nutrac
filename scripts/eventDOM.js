@@ -61,7 +61,10 @@ function submitButtonRetrieve() {
 }
 
 // submitButton Event Listener
-submitButton.addEventListener("click", submitButtonRetrieve);
+submitButton.addEventListener("click", function() {
+    addSpin();
+    submitButtonRetrieve()
+});
 
 // Adds toggle class to hid nav
 
@@ -261,7 +264,7 @@ function addSpin() {
     loadingDiv.classList.toggle('spin')
     setTimeout(function(){
         loadingDiv.classList.remove('spin')
-        }, 1500 )
+        }, 1360 )
 }
 function addSpin2() {
     loadingDiv2.classList.toggle('spin2')
