@@ -1,5 +1,7 @@
 # Nu.Trac Project
 
+![Image description](https://i.imgur.com/2YHcvd5.png)
+
 ## Antonio Garcia, Seil Cho, Ashish Garg
 
 ### Technologies Used: HTML5, CSS3, Javascript, 3 APIs (Spoonacular, NutritionIX, Zomato), Amazon Web Services (AWS)
