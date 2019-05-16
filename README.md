@@ -12,3 +12,5 @@
 #### When the user selects `Nut`, it displays the nutritional value of the recipe by calling the NutritionIX API. 
 #### When the user selects `Not`, it calls the Spoonacular API and generates a new recipe with the same meal/diet choices. 
 #### When the user selects `Restaurant`, it asks the user for their location, uses the coordinates for the Zomato API and displays the 10 nearest restauratnts with names, address, rating, as well as two icons that link to the photos and menu items. (Note: The same button is next to `Trac` as well).
+
+Live website: http://nutrac.seilcho7.dev
